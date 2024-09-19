@@ -1,0 +1,1130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmation</title>
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="fonts/font.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+  </head>
+
+  <body class="bg_secondary">
+    <!--========== header section ==========-->
+    <header class="w-100 bg-white">
+      <!-- top navbar -->
+      <nav class="top_navbar py-2">
+        <div class="container">
+          <div class="row row-cols-1">
+            <div class="col">
+              <div class="d-flex justify-content-between align-items-center text-white">
+                <div class="d-flex gap-2 align-items-center">
+                  <a href="#" class="d-flex align-items-center gap-2">
+                    <img src="images/support_icon.png" alt="img" class="img-fluid header_icon" width="27">
+                    <span class="ps-1">Need Help?</span>
+                  </a>
+                  <span class="fw-medium">+91 9090909090</span>
+                </div>
+                <div class="dropdown">
+                  <button class="btn dropdown-toggle my_account border-0 p-0 d-flex gap-2 pe-3" type="button" id="dropdownMenuButton1" 
+                    data-bs-toggle="dropdown">
+                    <img src="images/account_icon.png" alt="img" class="img-fluid header_icon" width="20">
+                    <span class="text-white fw-light d-none d-sm-block">My Account</span>
+                  </button>
+                  <ul class="dropdown-menu account_dropdown">
+                    <li>
+                      <a class="dropdown-item" href="#">
+                        Profile
+                      </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">
+                        Log Out
+                        <i class="fa-solid fa-arrow-right ps-2"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- main navbar -->
+      <nav class="main_navbar bg-white">
+        <div class="container">
+          <div class="row row-cols-1">
+            <div class="col d-flex align-items-center justify-content-between">
+              <div class="d-flex align-items-center gap-md-3 gap-2">
+                <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="offcanvas" 
+                  data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                  <img src="images/offcanvas_togle.png" alt="img" class="img-fluid header_icon" width="25">
+                </button>
+                <a href="index.html" class="d-inline-block logo">
+                  <img src="images/logo.png" alt="img" class="img-fluid" width="320">
+                </a>
+              </div>
+              <div class="form-group position-relative">
+                <img src="images/search_icon.png" alt="img" class="img-fluid position-absolute" width="20">
+                <input type="text" class="search_bar border-0 form-control shadow-none" placeholder="Search for your product">
+              </div>
+              <ul class="d-flex align-items-center gap-md-4 gap-2 p-0 m-0">
+                <li class="search_dropdown_li">
+                  <div class="search_dropdown">
+                    <div class="dropdown">
+                      <button class="btn dropdown-toggle border-0 p-0 d-flex" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" >
+                        <img src="images/search_icon.png" alt="img" class="img-fluid header_icon" width="25">
+                      </button>
+                      <div class="dropdown-menu p-1 rounded-1 border-0">
+                        <input type="text" class="search_bar border-0 rounded-1 form-control shadow-none p-2" placeholder="Search for your product">
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="dropdown">
+                    <a href="#" class="d-md-none">
+                      <img src="images/heart_icon.png" alt="img" class="img-fluid header_icon" width="32">
+                      <div class="count fw-normal d-flex justify-content-center align-items-center position-absolute d-md-none">8</div>
+                    </a>
+                    <button class="btn wishlist_btn dropdown-toggle border-0 d-md-flex d-none align-items-center gap-2 p-0" 
+                      type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" >
+                      <img src="images/heart_icon.png" alt="img" class="img-fluid header_icon" width="32">
+                      <div class="d-flex flex-column align-items-start">
+                        <span class="text_gray">Wishlist</span>
+                        <span class="fw-bolder">(8)</span>
+                      </div>
+                    </button>
+                    <div class="dropdown-menu header_dropdown border-0">
+                      <div class="content_wrapper">
+                        <a href="#" class="border-bottom d-flex align-items-center p-4 gap-4">
+                          <img src="images/demo_product_1.png" alt="img" class="img-fluid" width="90">
+                          <div>
+                            <span class="fw-semibold">Jhecked flannel shirt - Black / L</span>
+                            <p class="fw-semibold mb-0 pt-2">Color: <span class="fw-bold">Blue</span></p>
+                            <p class="fw-semibold mb-0">Size: <span class="fw-bold">XL</span></p>
+                          </div>
+                        </a>
+                        <a href="#" class="border-bottom d-flex align-items-center p-4 gap-4">
+                          <img src="images/demo_product_2.png" alt="img" class="img-fluid" width="90">
+                          <div>
+                            <span class="fw-semibold">Jeptum ring earrings - Black</span>
+                            <p class="fw-semibold mb-0 pt-2">Color: <span class="fw-bold">Black</span></p>
+                            <p class="fw-semibold mb-0">Size: <span class="fw-bold">s</span></p>
+                          </div>
+                        </a>
+                        <a href="#" class="border-bottom d-flex align-items-center p-4 gap-4">
+                          <img src="images/demo_product_1.png" alt="img" class="img-fluid" width="90">
+                          <div>
+                            <span class="fw-semibold">Jhecked flannel shirt - Black / L</span>
+                            <p class="fw-semibold mb-0 pt-2">Color: <span class="fw-bold">Blue</span></p>
+                            <p class="fw-semibold mb-0">Size: <span class="fw-bold">XL</span></p>
+                          </div>
+                        </a>
+                        <a href="#" class="border-bottom d-flex align-items-center p-4 gap-4">
+                          <img src="images/demo_product_2.png" alt="img" class="img-fluid" width="90">
+                          <div>
+                            <span class="fw-semibold">Jeptum ring earrings - Black</span>
+                            <p class="fw-semibold mb-0 pt-2">Color: <span class="fw-bold">Black</span></p>
+                            <p class="fw-semibold mb-0">Size: <span class="fw-bold">s</span></p>
+                          </div>
+                        </a>
+                        <a href="#" class="border-bottom d-flex align-items-center p-4 gap-4">
+                          <img src="images/demo_product_1.png" alt="img" class="img-fluid" width="90">
+                          <div>
+                            <span class="fw-semibold">Jhecked flannel shirt - Black / L</span>
+                            <p class="fw-semibold mb-0 pt-2">Color: <span class="fw-bold">Blue</span></p>
+                            <p class="fw-semibold mb-0">Size: <span class="fw-bold">XL</span></p>
+                          </div>
+                        </a>
+                        <a href="#" class="border-bottom d-flex align-items-center p-4 gap-4">
+                          <img src="images/demo_product_2.png" alt="img" class="img-fluid" width="90">
+                          <div>
+                            <span class="fw-semibold">Jeptum ring earrings - Black</span>
+                            <p class="fw-semibold mb-0 pt-2">Color: <span class="fw-bold">Black</span></p>
+                            <p class="fw-semibold mb-0">Size: <span class="fw-bold">s</span></p>
+                          </div>
+                        </a>
+                        <a href="#" class="border-bottom d-flex align-items-center p-4 gap-4">
+                          <img src="images/demo_product_1.png" alt="img" class="img-fluid" width="90">
+                          <div>
+                            <span class="fw-semibold">Jhecked flannel shirt - Black / L</span>
+                            <p class="fw-semibold mb-0 pt-2">Color: <span class="fw-bold">Blue</span></p>
+                            <p class="fw-semibold mb-0">Size: <span class="fw-bold">XL</span></p>
+                          </div>
+                        </a>
+                        <a href="#" class="border-bottom d-flex align-items-center p-4 gap-4">
+                          <img src="images/demo_product_2.png" alt="img" class="img-fluid" width="90">
+                          <div>
+                            <span class="fw-semibold">Jeptum ring earrings - Black</span>
+                            <p class="fw-semibold mb-0 pt-2">Color: <span class="fw-bold">Black</span></p>
+                            <p class="fw-semibold mb-0">Size: <span class="fw-bold">s</span></p>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="vertical_hr d-md-block d-none"></li>
+                <li>
+                  <div class="dropdown">
+                    <a href="#" class="d-md-none">
+                      <img src="images/cart_icon.png" alt="img" class="img-fluid header_icon" width="30">
+                      <div class="count fw-normal d-flex justify-content-center align-items-center position-absolute d-md-none">4</div>
+                    </a>
+                    <button class="btn wishlist_btn dropdown-toggle border-0 d-md-flex d-none align-items-center gap-2 p-0" 
+                      type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" >
+                      <img src="images/cart_icon.png" alt="img" class="img-fluid header_icon" width="30">
+                      <div class="d-flex flex-column align-items-start">
+                        <span class="text_gray">My Cart</span>
+                        <span class="fw-bolder">$180.00</span>
+                      </div>
+                    </button>
+                    <div class="dropdown-menu header_dropdown border-0">
+                      <div class="cart_content_wrapper">
+                        <a href="#" class="border-bottom d-flex align-items-center p-4 gap-4">
+                          <img src="images/demo_product_1.png" alt="img" class="img-fluid" width="90">
+                          <div>
+                            <span class="fw-medium">Jhecked flannel shirt - Black / L</span>
+                            <div class="pt-2">
+                              <span class="fw-medium">1&nbsp; &nbsp; &nbsp;X </span>
+                              <span class="text_orange fw-bold ps-3"> $45.00</span>
+                            </div>
+                          </div>
+                        </a>
+                        <a href="#" class="border-bottom d-flex align-items-center p-4 gap-4">
+                          <img src="images/demo_product_2.png" alt="img" class="img-fluid" width="90">
+                          <div>
+                            <span class="fw-medium">Jeptum ring earrings - Black</span>
+                            <div class="pt-2">
+                              <span class="fw-medium">1&nbsp; &nbsp; &nbsp;X </span>
+                              <span class="text_orange fw-bold ps-3"> $45.00</span>
+                            </div>
+                          </div>
+                        </a>
+                        <a href="#" class="border-bottom d-flex align-items-center p-4 gap-4">
+                          <img src="images/demo_product_1.png" alt="img" class="img-fluid" width="90">
+                          <div>
+                            <span class="fw-medium">Jhecked flannel shirt - Black / L</span>
+                            <div class="pt-2">
+                              <span class="fw-medium">1&nbsp; &nbsp; &nbsp;X </span>
+                              <span class="text_orange fw-bold ps-3"> $45.00</span>
+                            </div>
+                          </div>
+                        </a>
+                        <a href="#" class="border-bottom d-flex align-items-center p-4 gap-4">
+                          <img src="images/demo_product_2.png" alt="img" class="img-fluid" width="90">
+                          <div>
+                            <span class="fw-medium">Jeptum ring earrings - Black</span>
+                            <div class="pt-2">
+                              <span class="fw-medium">1&nbsp; &nbsp; &nbsp;X </span>
+                              <span class="text_orange fw-bold ps-3"> $45.00</span>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                      <div class="border-bottom border-top d-flex align-items-center p-4 justify-content-between">
+                        <span class="text_gray fw-semibold fs-18">Subtotal</span>
+                        <span class="text_orange fw-bold fs-18">$180.00</span>
+                      </div>
+                      <div class="p-4 d-flex flex-column gap-2">
+                        <button type="button" class="btn view_cart_btn">View Cart</button>
+                        <button type="button" class="btn checkout_btn">Checkout</button>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+              <!-- offcanvas start -->
+              <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                  <a href="index.html"><img src="images/logo.png" alt="img" class="img-fluid" width="280"></a>
+                  <button type="button" class="btn-close shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body p-0 pt-2">
+                  <div class="accordion accordion-flush" id="accordionFlushExample">
+                    <div class="accordion-item">
+                      <button class="accordion-button collapsed list_items" type="button" data-bs-toggle="collapse" 
+                        data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                        MEN'S FASHION
+                      </button>
+                      <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample" >
+                        <div class="accordion accordion-flush" id="men-fashion">
+                          <div class="accordion-item">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
+                              data-bs-target="#flush-men-topwear" aria-expanded="false" aria-controls="flush-men-topwear">
+                              Men's Top Wear
+                            </button>
+                            <div id="flush-men-topwear" class="accordion-collapse collapse" data-bs-parent="#men-fashion" >
+                              <ul>
+                                <li class="product_links">
+                                  <a href="#">All</a>
+                                </li>
+                                <li class="product_links">
+                                  <a href="#">Men's T-Shirts</a>
+                                </li>
+                                <li class="product_links">
+                                  <a href="#">Men's Casual Shirts</a>
+                                </li>
+                                <li class="product_links">
+                                  <a href="#">Men's Formal Shirts</a>
+                                </li>
+                                <li class="product_links">
+                                  <a href="#">Men's Kurtas</a>
+                                </li>
+                                <li class="product_links">
+                                  <a href="#">Men's Ethnic Sets</a>
+                                </li>
+                                <li class="product_links">
+                                  <a href="#">Men's Blazers</a>
+                                </li>
+                                <li class="product_links">
+                                  <a href="#">Men's Raincoat</a>
+                                </li>
+                                <li class="product_links">
+                                  <a href="#">Men's Windcheaters</a>
+                                </li>
+                                <li class="product_links">
+                                  <a href="#">Men's Suit</a>
+                                </li>
+                                <li class="product_links">
+                                  <a href="#">Men's Fabrics</a>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="accordion-item">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
+                                data-bs-target="#flush-men-bottomwear" aria-expanded="false" aria-controls="flush-men-bottomwear">
+                                Men's Bottom Wear
+                              </button>
+                            <div id="flush-men-bottomwear" class="accordion-collapse collapse" data-bs-parent="#men-fashion" >
+                              <ul>
+                                <li class="product_links">
+                                  <a href="#">All</a>
+                                </li>
+                                <li class="product_links">
+                                  <a href="#">Men's Jeans</a>
+                                </li>
+                                <li class="product_links">
+                                  <a href="#">Men's Trousers</a>
+                                </li>
+                                <li class="product_links">
+                                  <a href="#">Men's Trackpants</a>
+                                </li>
+                                <li class="product_links">
+                                  <a href="#">Men's Shorts</a>
+                                </li>
+                                <li class="product_links">
+                                  <a href="#">Men's Cargos</a>
+                                </li>
+                                <li class="product_links">
+                                  <a href="#">Men's Threefourths</a>
+                                </li>
+                                <li class="product_links">
+                                  <a href="#">Men's Pyjamas & Loungepants</a>
+                                </li>
+                                <li class="product_links">
+                                  <a href="#">Men's Dhoti</a>
+                                </li>
+                                <li class="product_links">
+                                  <a href="#">Men's Ethnic Pyjama</a>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <button class="accordion-button collapsed list_items" type="button" data-bs-toggle="collapse" 
+                        data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                        WOMEN'S FASHION
+                      </button>
+                      <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample" >
+                        <div class="accordion accordion-flush" id="women-fashion">
+                          <div class="accordion-item">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
+                              data-bs-target="#flush-women-topwear" aria-expanded="false" aria-controls="flush-women-topwear">
+                              Women's Top Wear
+                            </button>
+                            <div id="flush-women-topwear" class="accordion-collapse collapse" data-bs-parent="#women-fashion" >
+                              <ul>
+                                <li class="product_links">
+                                  <a href="#">All</a>
+                                </li>
+                                <li class="product_links">
+                                  <a href="#">Women's T-Shirts</a>
+                                </li>
+                                <li class="product_links">
+                                  <a href="#">Women's Casual Shirts</a>
+                                </li>
+                                <li class="product_links">
+                                  <a href="#">Women's Formal Shirts</a>
+                                </li>
+                                <li class="product_links">
+                                  <a href="#">Women's Kurtas</a>
+                                </li>
+                                <li class="product_links">
+                                  <a href="#">Women's Ethnic Sets</a>
+                                </li>
+                                <li class="product_links">
+                                  <a href="#">Women's Blazers</a>
+                                </li>
+                                <li class="product_links">
+                                  <a href="#">Women's Raincoat</a>
+                                </li>
+                                <li class="product_links">
+                                  <a href="#">Women's Windcheaters</a>
+                                </li>
+                                <li class="product_links">
+                                  <a href="#">Women's Suit</a>
+                                </li>
+                                <li class="product_links">
+                                  <a href="#">Women's Fabrics</a>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="accordion-item">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
+                                data-bs-target="#flush-women-bottomwear" aria-expanded="false" aria-controls="flush-women-bottomwear">
+                                Women's Bottom Wear
+                              </button>
+                            <div id="flush-women-bottomwear" class="accordion-collapse collapse" data-bs-parent="#women-fashion" >
+                              <ul>
+                                <li class="product_links">
+                                  <a href="#">All</a>
+                                </li>
+                                <li class="product_links">
+                                  <a href="#">Women's Jeans</a>
+                                </li>
+                                <li class="product_links">
+                                  <a href="#">Women's Trousers</a>
+                                </li>
+                                <li class="product_links">
+                                  <a href="#">Women's Trackpants</a>
+                                </li>
+                                <li class="product_links">
+                                  <a href="#">Women's Shorts</a>
+                                </li>
+                                <li class="product_links">
+                                  <a href="#">Women's Cargos</a>
+                                </li>
+                                <li class="product_links">
+                                  <a href="#">Women's Threefourths</a>
+                                </li>
+                                <li class="product_links">
+                                  <a href="#">Women's Pyjamas & Loungepants</a>
+                                </li>
+                                <li class="product_links">
+                                  <a href="#">Women's Dhoti</a>
+                                </li>
+                                <li class="product_links">
+                                  <a href="#">Women's Ethnic Pyjama</a>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <button class="accordion-button collapsed list_items" type="button" data-bs-toggle="collapse" 
+                        data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                        KIDS FASHION
+                      </button>
+                      <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample" >
+                        <div class="accordion accordion-flush" id="kids-fashion">
+                          <div class="accordion-item">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
+                                data-bs-target="#flush-kids-topwear" aria-expanded="false" aria-controls="flush-kids-topwear">
+                                Kid's Top Wear
+                              </button>
+                            <div id="flush-kids-topwear" class="accordion-collapse collapse" data-bs-parent="#kids-fashion">
+                              <ul>
+                                <li class="product_links">
+                                  <a href="#">All</a>
+                                </li>
+                                <li class="product_links">
+                                  <a href="#">Kid's T-Shirts</a>
+                                </li>
+                                <li class="product_links">
+                                  <a href="#">Kid's Casual Shirts</a>
+                                </li>
+                                <li class="product_links">
+                                  <a href="#">Kid's Formal Shirts</a>
+                                </li>
+                                <li class="product_links">
+                                  <a href="#">Kid's Kurtas</a>
+                                </li>
+                                <li class="product_links">
+                                  <a href="#">Kid's Ethnic Sets</a>
+                                </li>
+                                <li class="product_links">
+                                  <a href="#">Kid's Blazers</a>
+                                </li>
+                                <li class="product_links">
+                                  <a href="#">Kid's Raincoat</a>
+                                </li>
+                                <li class="product_links">
+                                  <a href="#">Kid's Windcheaters</a>
+                                </li>
+                                <li class="product_links">
+                                  <a href="#">Kid's Suit</a>
+                                </li>
+                                <li class="product_links">
+                                  <a href="#">Kid's Fabrics</a>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="accordion-item">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
+                              data-bs-target="#flush-kids-bottomwear" aria-expanded="false" aria-controls="flush-kids-bottomwear">
+                              Kid's Bottom Wear
+                            </button>
+                            <div id="flush-kids-bottomwear" class="accordion-collapse collapse" data-bs-parent="#kids-fashion">
+                              <ul>
+                                <li class="product_links">
+                                  <a href="#">All</a>
+                                </li>
+                                <li class="product_links">
+                                  <a href="#">Kid's Jeans</a>
+                                </li>
+                                <li class="product_links">
+                                  <a href="#">Kid's Trousers</a>
+                                </li>
+                                <li class="product_links">
+                                  <a href="#">Kid's Trackpants</a>
+                                </li>
+                                <li class="product_links">
+                                  <a href="#">Kid's Shorts</a>
+                                </li>
+                                <li class="product_links">
+                                  <a href="#">Kid's Cargos</a>
+                                </li>
+                                <li class="product_links">
+                                  <a href="#">Kid's Threefourths</a>
+                                </li>
+                                <li class="product_links">
+                                  <a href="#">Kid's Pyjamas & Loungepants</a>
+                                </li>
+                                <li class="product_links">
+                                  <a href="#">Kid's Dhoti</a>
+                                </li>
+                                <li class="product_links">
+                                  <a href="#">Kid's Ethnic Pyjama</a>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <button class="accordion-button collapsed list_items" type="button" data-bs-toggle="collapse" 
+                        data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                        ELECTRONICS
+                      </button>
+                      <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample" >
+                        <ul>
+                          <li class="product_links">
+                            <a href="#">All</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <button class="accordion-button collapsed list_items" type="button" data-bs-toggle="collapse" 
+                        data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                        HOME & KITCHEN
+                      </button>
+                      <div id="flush-collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample" >
+                        <ul>
+                          <li class="product_links">
+                            <a href="#">All</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                        <button class="accordion-button collapsed list_items" type="button" data-bs-toggle="collapse" 
+                          data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+                          BEAUTY
+                        </button>
+                      <div id="flush-collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample" >
+                        <ul>
+                          <li class="product_links">
+                            <a href="#">All</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <button class="accordion-button collapsed list_items" type="button" data-bs-toggle="collapse" 
+                        data-bs-target="#flush-collapseSeven" aria-expanded="false" aria-controls="flush-collapseSeven">
+                        SPORTS & FITNESS
+                      </button>
+                      <div id="flush-collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample" >
+                        <ul>
+                          <li class="product_links">
+                            <a href="#">All</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <button class="accordion-button collapsed list_items" type="button" data-bs-toggle="collapse" 
+                        data-bs-target="#flush-collapseEight" aria-expanded="false" aria-controls="flush-collapseEight">
+                        TOYS
+                      </button>
+                      <div id="flush-collapseEight" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample" >
+                        <ul>
+                          <li class="product_links">
+                            <a href="#">All</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- sub navbar -->
+      <nav class="sub_navbar bg-white">
+        <div class="container">
+          <div class="row row-cols-1">
+            <div class="col pb-1">
+              <ul class="d-flex justify-content-evenly border-top py-3">
+                <li class="list-item">
+                  <a href="javascript://">MEN'S FASHION</a>
+                  <div class="dropdown_div bg-white d-flex">
+                    <div>
+                      <h6 class="fw-semibold px-3">Men's Top Wear</h6>
+                      <ul>
+                        <li class="product_links">
+                          <a href="#">All</a>
+                        </li>
+                        <li class="product_links">
+                          <a href="#">Men's T-Shirts</a>
+                        </li>
+                        <li class="product_links">
+                          <a href="#">Men's Casual Shirts</a>
+                        </li>
+                        <li class="product_links">
+                          <a href="#">Men's Formal Shirts</a>
+                        </li>
+                        <li class="product_links">
+                          <a href="#">Men's Kurtas</a>
+                        </li>
+                        <li class="product_links">
+                          <a href="#">Men's Ethnic Sets</a>
+                        </li>
+                        <li class="product_links">
+                          <a href="#">Men's Blazers</a>
+                        </li>
+                        <li class="product_links">
+                          <a href="#">Men's Raincoat</a>
+                        </li>
+                        <li class="product_links">
+                          <a href="#">Men's Windcheaters</a>
+                        </li>
+                        <li class="product_links">
+                          <a href="#">Men's Suit</a>
+                        </li>
+                        <li class="product_links">
+                          <a href="#">Men's Fabrics</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div>
+                      <h6 class="fw-semibold px-3">Men's Bottom Wear</h6>
+                      <ul>
+                        <li class="product_links">
+                          <a href="#">All</a>
+                        </li>
+                        <li class="product_links">
+                          <a href="#">Men's Jeans</a>
+                        </li>
+                        <li class="product_links">
+                          <a href="#">Men's Trousers</a>
+                        </li>
+                        <li class="product_links">
+                          <a href="#">Men's Trackpants</a>
+                        </li>
+                        <li class="product_links">
+                          <a href="#">Men's Shorts</a>
+                        </li>
+                        <li class="product_links">
+                          <a href="#">Men's Cargos</a>
+                        </li>
+                        <li class="product_links">
+                          <a href="#">Men's Threefourths</a>
+                        </li>
+                        <li class="product_links">
+                          <a href="#">Men's Pyjamas & Loungepants</a>
+                        </li>
+                        <li class="product_links">
+                          <a href="#">Men's Dhoti</a>
+                        </li>
+                        <li class="product_links">
+                          <a href="#">Men's Ethnic Pyjama</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li class="list-item">
+                  <a href="javascript://">WOMEN'S FASHION</a>
+                  <div class="dropdown_div bg-white d-flex">
+                    <div>
+                      <h6 class="fw-semibold px-3">Women's Top Wear</h6>
+                      <ul>
+                        <li class="product_links">
+                          <a href="#">All</a>
+                        </li>
+                        <li class="product_links">
+                          <a href="#">Women's T-Shirts</a>
+                        </li>
+                        <li class="product_links">
+                          <a href="#">Women's Casual Shirts</a>
+                        </li>
+                        <li class="product_links">
+                          <a href="#">Women's Formal Shirts</a>
+                        </li>
+                        <li class="product_links">
+                          <a href="#">Women's Kurtas</a>
+                        </li>
+                        <li class="product_links">
+                          <a href="#">Women's Ethnic Sets</a>
+                        </li>
+                        <li class="product_links">
+                          <a href="#">Women's Blazers</a>
+                        </li>
+                        <li class="product_links">
+                          <a href="#">Women's Raincoat</a>
+                        </li>
+                        <li class="product_links">
+                          <a href="#">Women's Windcheaters</a>
+                        </li>
+                        <li class="product_links">
+                          <a href="#">Women's Suit</a>
+                        </li>
+                        <li class="product_links">
+                          <a href="#">Women's Fabrics</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div>
+                      <h6 class="fw-semibold px-3">Women's Bottom Wear</h6>
+                      <ul>
+                        <li class="product_links">
+                          <a href="#">All</a>
+                        </li>
+                        <li class="product_links">
+                          <a href="#">Women's Jeans</a>
+                        </li>
+                        <li class="product_links">
+                          <a href="#">Women's Trousers</a>
+                        </li>
+                        <li class="product_links">
+                          <a href="#">Women's Trackpants</a>
+                        </li>
+                        <li class="product_links">
+                          <a href="#">Women's Shorts</a>
+                        </li>
+                        <li class="product_links">
+                          <a href="#">Women's Cargos</a>
+                        </li>
+                        <li class="product_links">
+                          <a href="#">Women's Threefourths</a>
+                        </li>
+                        <li class="product_links">
+                          <a href="#">Women's Pyjamas & Loungepants</a>
+                        </li>
+                        <li class="product_links">
+                          <a href="#">Women's Dhoti</a>
+                        </li>
+                        <li class="product_links">
+                          <a href="#">Women's Ethnic Pyjama</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li class="list-item">
+                  <a href="javascript://">KIDS FASHION</a>
+                  <div class="dropdown_div bg-white d-flex">
+                    <div>
+                      <h6 class="fw-semibold px-3">Kid's Top Wear</h6>
+                      <ul>
+                        <li class="product_links">
+                          <a href="#">All</a>
+                        </li>
+                        <li class="product_links">
+                          <a href="#">Kid's T-Shirts</a>
+                        </li>
+                        <li class="product_links">
+                          <a href="#">Kid's Casual Shirts</a>
+                        </li>
+                        <li class="product_links">
+                          <a href="#">Kid's Formal Shirts</a>
+                        </li>
+                        <li class="product_links">
+                          <a href="#">Kid's Kurtas</a>
+                        </li>
+                        <li class="product_links">
+                          <a href="#">Kid's Ethnic Sets</a>
+                        </li>
+                        <li class="product_links">
+                          <a href="#">Kid's Blazers</a>
+                        </li>
+                        <li class="product_links">
+                          <a href="#">Kid's Raincoat</a>
+                        </li>
+                        <li class="product_links">
+                          <a href="#">Kid's Windcheaters</a>
+                        </li>
+                        <li class="product_links">
+                          <a href="#">Kid's Suit</a>
+                        </li>
+                        <li class="product_links">
+                          <a href="#">Kid's Fabrics</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div>
+                      <h6 class="fw-semibold px-3">Kid's Bottom Wear</h6>
+                      <ul>
+                        <li class="product_links">
+                          <a href="#">All</a>
+                        </li>
+                        <li class="product_links">
+                          <a href="#">Kid's Jeans</a>
+                        </li>
+                        <li class="product_links">
+                          <a href="#">Kid's Trousers</a>
+                        </li>
+                        <li class="product_links">
+                          <a href="#">Kid's Trackpants</a>
+                        </li>
+                        <li class="product_links">
+                          <a href="#">Kid's Shorts</a>
+                        </li>
+                        <li class="product_links">
+                          <a href="#">Kid's Cargos</a>
+                        </li>
+                        <li class="product_links">
+                          <a href="#">Kid's Threefourths</a>
+                        </li>
+                        <li class="product_links">
+                          <a href="#">Kid's Pyjamas & Loungepants</a>
+                        </li>
+                        <li class="product_links">
+                          <a href="#">Kid's Dhoti</a>
+                        </li>
+                        <li class="product_links">
+                          <a href="#">Kid's Ethnic Pyjama</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li class="list-item">
+                  <a href="javascript://">ELECTRONICS</a>
+                  <div class="dropdown_div bg-white">
+                    <h6 class="fw-semibold px-3">ELECTRONICS</h6>
+                    <ul>
+                      <li class="product_links">
+                        <a href="#">All</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="list-item">
+                  <a href="javascript://">HOME & KITCHEN</a>
+                  <div class="dropdown_div bg-white">
+                    <h6 class="fw-semibold px-3">HOME & KITCHEN</h6>
+                    <ul>
+                      <li class="product_links">
+                        <a href="#">All</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="list-item">
+                  <a href="javascript://">BEAUTY</a>
+                  <div class="dropdown_div bg-white">
+                    <h6 class="fw-semibold px-3">BEAUTY</h6>
+                    <ul>
+                      <li class="product_links">
+                        <a href="#">All</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="list-item">
+                  <a href="javascript://">SPORTS & FITNESS</a>
+                  <div class="dropdown_div bg-white">
+                    <h6 class="fw-semibold px-3">SPORTS & FITNESS</h6>
+                    <ul>
+                      <li class="product_links">
+                        <a href="#">All</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="list-item">
+                  <a href="javascript://">TOYS</a>
+                  <div class="dropdown_div bg-white">
+                    <h6 class="fw-semibold px-3">TOYS</h6>
+                    <ul>
+                      <li class="product_links">
+                        <a href="#">All</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!--========== header section End ==========-->
+
+    <!--========== confirmation section ==========-->
+    <section class="pt-3 banner_section">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="d-flex gap-3 fw-semibold page_navigation pb-2">
+              <a href="index.html">
+                Home
+              </a>
+              >
+              <a href="#">
+                Confirmation
+              </a>
+            </div>
+            <div class="card border-0 bg-white p-4 mt-2 py-5">
+              <div class="row justify-content-center">
+                <div class="col-6 text-center">
+                  <img src="images/sucess_icon.png" alt="img" class="img-fluid pt-3" width="80">
+                  <h2 class="fw-bold pt-3 fs-1">Thankyou for Ordering</h2>
+                  <span class="fw-bold fs-18">Order ID : #646755712538</span>
+                  <div class="border-top border-bottom border-secondary-subtle fw-bold d-flex flex-column gap-2 py-3 fs-18 mt-4">
+                    <div class="d-flex justify-content-between">
+                      <span>Date of Order</span>
+                      <span>30 Jan 2024</span>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                      <span>Amount</span>
+                      <span>$50.00</span>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                      <span>Payment Method</span>
+                      <span>VCash</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--========== confirmation section End ==========-->
+
+    <!--========== footer section section ==========-->
+    <footer class="common_section bg-white mt-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-4">
+            <a href="index.html">
+              <img src="images/logo.png" alt="img" class="img-fluid" width="320">
+            </a>
+            <p class="fw-bold pt-2">
+              Quis ipsum suspendisse ultrices gravida. Risus commodoviverr maecenas accumsan lacus ve facilisis in
+              termapol.
+            </p>
+            <ul class="fw-bold d-flex flex-column gap-2">
+              <li>
+                <a href="#" class="d-flex gap-2 align-items-center">
+                  <img src="images/telephone_icon.png" alt="img" width="15">
+                  +91 9090909090
+                </a>
+              </li>
+              <li>
+                <a href="#" class="d-flex gap-2 align-items-center">
+                  <img src="images/mail_icon.png" alt="img" width="15">
+                  emailaaddress@email.com
+                </a>
+              </li>
+              <li>
+                <a href="#" class="d-flex gap-2 align-items-center">
+                  <img src="images/telegram_icon.png" alt="img" width="15">
+                  t.telegramnamehere
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-2">
+            <div class="mx-auto quick_links">
+              <h6 class="my-3">Information</h6>
+              <ul class="d-flex flex-column gap-2 pt-2">
+                <li>
+                  <a href="#">Privacy Policy</a>
+                </li>
+                <li>
+                  <a href="#">Returns Policy</a>
+                </li>
+                <li>
+                  <a href="#">Shipping Policy</a>
+                </li>
+                <li>
+                  <a href="#">Terms of use</a>
+                </li>
+                <li>
+                  <a href="#">FAQ's</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="mx-auto quick_links">
+              <h6 class="my-3">Account</h6>
+              <ul class="d-flex flex-column gap-2 pt-2">
+                <li>
+                  <a href="#">Dashboard</a>
+                </li>
+                <li>
+                  <a href="#">My Orders</a>
+                </li>
+                <li>
+                  <a href="#">My Wishlist</a>
+                </li>
+                <li>
+                  <a href="#">Account details</a>
+                </li>
+                <li>
+                  <a href="#">Track My Orders</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="mx-auto quick_links">
+              <h6 class="my-3">Shop</h6>
+              <ul class="d-flex flex-column gap-2 pt-2">
+                <li>
+                  <a href="#">Affiliate Program</a>
+                </li>
+                <li>
+                  <a href="#">Sell Here</a>
+                </li>
+                <li>
+                  <a href="#">Discount</a>
+                </li>
+                <li>
+                  <a href="#">Latest Products</a>
+                </li>
+                <li>
+                  <a href="#">Sale</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="mx-auto quick_links">
+              <h6 class="my-3">Categories</h6>
+              <ul class="d-flex flex-column gap-2 pt-2">
+                <li>
+                  <a href="#">Women</a>
+                </li>
+                <li>
+                  <a href="#">Men</a>
+                </li>
+                <li>
+                  <a href="#">Bags</a>
+                </li>
+                <li>
+                  <a href="#">Outerwear</a>
+                </li>
+                <li>
+                  <a href="#">Shoes</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="row row-cols-1 mt-4 pt-2">
+          <div class="col py-2 border-top">
+            <div class="row row-cols-3 align-items-center">
+              <div class="col">
+                <ul class="d-flex gap-2">
+                  <li>
+                    <a href="#">
+                      <img src="images/fb.png" alt="img" class="img-fluid" width="28">
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img src="images/twit.png" alt="img" class="img-fluid" width="28">
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img src="images/insta.png" alt="img" class="img-fluid" width="28">
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img src="images/linkedin.png" alt="img" class="img-fluid" width="28">
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col text-center">
+                <span class="fw-bold">
+                  2024. Theshoppersclub. All Rights Reserved
+                </span>
+              </div>
+              <div class="col">
+                <ul class="d-flex gap-3 align-items-center justify-content-end">
+                  <li>
+                    <img src="images/visa.png" alt="img" class="img-fluid" width="35">
+                  </li>
+                  <li>
+                    <img src="images/mastercard.png" alt="img" class="img-fluid" width="35">
+                  </li>
+                  <li>
+                    <img src="images/paypal.png" alt="img" class="img-fluid" width="35">
+                  </li>
+                  <li>
+                    <img src="images/american.png" alt="img" class="img-fluid" width="35">
+                  </li>
+                  <li>
+                    <img src="images/discover.png" alt="img" class="img-fluid" width="35">
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!--========== footer section section End ==========-->
+
+    <script src="js/all.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

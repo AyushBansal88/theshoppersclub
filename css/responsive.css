@@ -1,0 +1,180 @@
+@media(min-width: 1600px) {
+  .container {
+    max-width: 1560px;
+  }
+}
+
+
+@media(min-width:991px) {
+  header .form-group {
+    width: 30%;
+  }
+}
+
+@media(max-width: 1080px) {
+  .sub_navbar {
+    display: none;
+  }
+
+  header .form-group {
+    display: none;
+  }
+
+  .search_dropdown_li {
+    display: block;
+  }
+
+  .logo img {
+    width: 280px;
+  }
+
+  .banner_content {
+    padding: 6rem 0;
+  }
+
+  .banner_section .carousel-indicators {
+    margin-left: 3.5rem;
+  }
+}
+
+@media(min-width: 1080px) {
+  /* .container {
+    max-width: 1180px;
+  } */
+}
+
+@media(min-width: 1200px) {
+
+  /* .container {
+    max-width: 1180px; 
+  } */
+  header .form-group {
+    width: 40%;
+  }
+}
+
+@media(min-width: 1300px) {
+  header .form-group {
+    width: 47%;
+  }
+}
+
+@media(min-width: 1400px) {
+  .container {
+    max-width: 1360px;
+  }
+}
+
+@media(min-width: 1500px) {
+  .container {
+    max-width: 1400px;
+  }
+}
+
+@media(max-width:991px) {
+  .deals_cards_section .card {
+    height: 380px;
+    padding: 20px;
+  }
+}
+
+@media(max-width:767px) {
+  .cards_section .card h5 {
+    font-size: 24px;
+  }
+
+  .cards_section .card {
+    padding: 40px 25px;
+  }
+
+  .deals_cards_section .card {
+    height: 450px;
+    background-position: top;
+  }
+}
+
+@media(max-width:575px) {
+  .container {
+    max-width: 100%;
+  }
+
+  .header_icon {
+    width: 20px;
+  }
+
+  .logo img {
+    width: 180px !important;
+  }
+
+  .count {
+    font-size: 10px;
+    line-height: 10px;
+    max-height: 14px;
+    max-width: 14px;
+    min-height: 14px;
+    min-width: 14px;
+  }
+
+  .main_navbar {
+    padding: 14px 0px;
+  }
+
+  .banner_content {
+    padding: 3rem 0;
+  }
+
+  .banner_section h2 {
+    font-size: 30px;
+  }
+
+  .banner_section h1 {
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .banner_section .carousel-indicators {
+    margin-left: 1rem;
+  }
+
+  .cards_section .card {
+    padding: 18px 18px;
+  }
+
+  .cards_section .card h5 {
+    font-size: 20px;
+  }
+
+  .cards_section .card span {
+    font-size: 16px;
+  }
+
+  .product_card .product_price {
+    font-size: 18px;
+  }
+
+  .product_card .product_price .prev_price {
+    font-size: 16px;
+  }
+
+  .deals_cards_section .card {
+    height: 400px;
+  }
+
+  .footer_logo img{
+    width: 280px;
+  }
+
+  .scroll_header_padding{
+    padding-top: 96px !important 
+  }
+}
+
+@media(max-width:428px) {
+  .product_row .col {
+    width: 100% !important;
+  }
+
+  .special_products_section .fs-18 {
+    font-size: 16px;
+  }
+}
