@@ -255,9 +255,9 @@ header .search_dropdown .dropdown-menu {
 }
 
 .sub_navbar .product_links {
-  padding: 6px 12px;
+  padding: 10px 15px;
   font-weight: 300;
-  color: #000;
+  /* color: #000; */
 }
 
 .sub_navbar .product_links a {
@@ -406,11 +406,40 @@ header .search_dropdown .dropdown-menu {
 
 /* banner section css */
 
-.banner_section .carousel-item {
+.banner_section .carousel-item.carousel_1 {
   background: url('../images/banner_bg.png');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+}
+
+.banner_section .carousel-item.carousel_2 {
+  background: url('../images/banner_demno_bg_1.png');
+}
+
+.banner_section .carousel-item.carousel_3 {
+  background: url('../images/banner_demno_bg_2.jpg');
+}
+
+@keyframes example {
+  0%   {transform: translateX(50px);}
+ 
+  50% {transform: translateX(-50px);}
+  
+  100% {transform: translateX(0px);}
+}
+
+.carousel-item.active h1{
+  animation:  example 0.6s;
+}
+
+.carousel-item.active h2,
+.carousel-item.active .shop_now{
+  animation: example 0.9s;
+}
+
+.banner_section .carousel-item{
+  opacity: 0.6;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  background-size: cover !important;
 }
 
 .banner_section .carousel-indicators button {
@@ -878,3 +907,5 @@ border:1px solid #EA5D11;
 .redeem_div{
   background: #F7F7F7;
 }
+/* fdhio;jhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh */
+
