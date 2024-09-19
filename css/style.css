@@ -704,6 +704,16 @@ footer .border-top {
   color: #EA5D11;
 }
 
+.product_detail_page_btn .btn {
+  background: #EA5D11;
+  padding: 10px 26px;
+}
+
+.product_detail_page_btn .btn:active,
+.product_detail_page_btn .btn:hover{
+  background: #ff9320;
+}
+
 .product_img_div {
   background-color: #D8DCDD;
 }
@@ -727,10 +737,6 @@ footer .border-top {
 .size_dropdown {
   width: 80px;
   outline: none !important;
-}
-
-.select-box {
- 
 }
 
 .color_options a {
