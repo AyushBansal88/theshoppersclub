@@ -35,19 +35,13 @@
   .banner_section .carousel-indicators {
     margin-left: 3.5rem;
   }
-}
 
-@media(min-width: 1080px) {
-  /* .container {
-    max-width: 1180px;
-  } */
+  .product_img img{
+    width: 70px;
+  }
 }
 
 @media(min-width: 1200px) {
-
-  /* .container {
-    max-width: 1180px; 
-  } */
   header .form-group {
     width: 40%;
   }
@@ -59,15 +53,10 @@
   }
 }
 
-@media(min-width: 1400px) {
-  .container {
-    max-width: 1360px;
-  }
-}
 
-@media(min-width: 1500px) {
-  .container {
-    max-width: 1400px;
+@media(max-width:1199px){
+  .product_img_div img{
+    width: 370px;
   }
 }
 
@@ -75,6 +64,10 @@
   .deals_cards_section .card {
     height: 380px;
     padding: 20px;
+  }
+
+  .product_details_card .sticky-top{
+    position: static !important;
   }
 }
 
@@ -177,4 +170,6 @@
   .special_products_section .fs-18 {
     font-size: 16px;
   }
+
+
 }

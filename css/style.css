@@ -230,11 +230,11 @@ header .search_dropdown .btn::after{
 }
 
 header .search_dropdown .dropdown-menu {
-    min-width: 260px;
-    transform: translate(-50% , -50%) !important;
-    top: 55px !important;
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-    left: -65px !important;
+  min-width: 260px;
+  transform: translate(-50% , -50%) !important;
+  top: 55px !important;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  left: -65px !important;
 }
 
 .search_dropdown_li{
@@ -712,32 +712,25 @@ footer .border-top {
   transition: all 0.4s ease;
 }
 
+.product_details_card .sticky-top{
+  top: 90px;
+}
+
 .product_details_card .nav-item:hover {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
-.size_dropdown .btn {
+.product_data tr td{
+  vertical-align: top;
+}
+
+.size_dropdown {
   width: 80px;
+  outline: none !important;
 }
 
-.size_dropdown .dropdown-menu {
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-}
-
-.size_dropdown .dropdown-toggle::after {
-  position: absolute;
-  padding: 0;
-  margin: 0;
-  background: url('../images/down_arrow_black.png');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  border: none;
-  right: 10px;
-  width: 14px;
-  height: 12px;
-  transform: translateY(-50%);
-  top: 50%;
+.select-box {
+ 
 }
 
 .color_options a {
