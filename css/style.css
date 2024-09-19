@@ -230,10 +230,11 @@ header .search_dropdown .btn::after{
 }
 
 header .search_dropdown .dropdown-menu {
-  min-width: 300px;
-  transform: translate(10% , -50%) !important;
-  top: 55px !important;
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    min-width: 260px;
+    transform: translate(-50% , -50%) !important;
+    top: 55px !important;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    left: -65px !important;
 }
 
 .search_dropdown_li{
