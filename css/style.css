@@ -417,7 +417,7 @@ header .search_dropdown .dropdown-menu {
     transform: translateX(25px);
   }
 
-  50% {
+  50% { 
     transform: translateX(-25px);
   }
 
@@ -427,12 +427,12 @@ header .search_dropdown .dropdown-menu {
 }
 
 .carousel-item.active h1 {
-  animation: carousel_animation 0.7s;
+  animation: carousel_animation 0.6s;
 }
 
 .carousel-item.active h2,
 .carousel-item.active .shop_now {
-  animation: carousel_animation 1s;
+  animation: carousel_animation 0.9s;
 }
 
 .banner_section .carousel-item {
