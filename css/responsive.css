@@ -1,6 +1,12 @@
-@media(min-width: 1600px) {
-  .container {
-    max-width: 1560px;
+@media(min-width:991px) {
+  header .form-group {
+    width: 30%;
+  }
+}
+
+@media(min-width: 1200px) {
+  header .form-group {
+    width: 40%;
   }
 }
 
@@ -10,9 +16,9 @@
   }
 }
 
-@media(min-width: 1200px) {
-  header .form-group {
-    width: 40%;
+@media(min-width: 1600px) {
+  .container {
+    max-width: 1560px;
   }
 }
 
@@ -49,12 +55,6 @@
 
   .product_img img {
     width: 70px;
-  }
-}
-
-@media(min-width:991px) {
-  header .form-group {
-    width: 30%;
   }
 }
 
@@ -157,6 +157,10 @@
 
   .scroll_header_padding {
     padding-top: 96px !important
+  }
+
+  .offcanvas.offcanvas-start {
+    width: 320px !important;
   }
 }
 

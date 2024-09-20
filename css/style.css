@@ -163,13 +163,14 @@ header.scroll_header .sub_navbar {
 header .list-item:hover div.dropdown_div {
   visibility: visible;
   opacity: 1;
+  z-index: 9;
 }
 
 header .dropdown_div {
   top: 200px;
   padding: 15px 0px;
   min-width: 168px;
-  border-radius: 5px;
+  border-radius: 0px;
   visibility: hidden;
   opacity: 0;
   position: absolute;
@@ -255,9 +256,8 @@ header .search_dropdown .dropdown-menu {
 }
 
 .sub_navbar .product_links {
-  padding: 10px 15px;
+  padding: 15px 30px;
   font-weight: 300;
-  /* color: #000; */
 }
 
 .sub_navbar .product_links a {
@@ -328,12 +328,6 @@ header .search_dropdown .dropdown-menu {
 .top_navbar .account_dropdown li:hover a {
   color: #EA5D11;
   background-color: unset;
-}
-
-.top_navbar .account_dropdown a {
-  /* font-weight: 500; */
-  /* color: #939393; */
-  /* font-size: 18px; */
 }
 
 .top_navbar .account_dropdown {
@@ -411,20 +405,20 @@ header .search_dropdown .dropdown-menu {
 }
 
 .banner_section .carousel-item.carousel_2 {
-  background: url('../images/banner_demno_bg_1.png');
+  background: url('../images/banner_demo_bg_1.png');
 }
 
 .banner_section .carousel-item.carousel_3 {
-  background: url('../images/banner_demno_bg_2.jpg');
+  background: url('../images/banner_demo_bg_2.jpg');
 }
 
-@keyframes example {
+@keyframes carousel_animation {
   0% {
-    transform: translateX(50px);
+    transform: translateX(40px);
   }
 
   50% {
-    transform: translateX(-50px);
+    transform: translateX(-40px);
   }
 
   100% {
@@ -433,12 +427,12 @@ header .search_dropdown .dropdown-menu {
 }
 
 .carousel-item.active h1 {
-  animation: example 0.6s;
+  animation: carousel_animation 0.7s;
 }
 
 .carousel-item.active h2,
 .carousel-item.active .shop_now {
-  animation: example 0.9s;
+  animation: carousel_animation 1s;
 }
 
 .banner_section .carousel-item {
@@ -520,14 +514,14 @@ header .search_dropdown .dropdown-menu {
   background: url('../images/modal.png'), #F6FCFF;
   background-repeat: no-repeat;
   background-position: 94% top, center;
-  background-size: 43% 100%;
+  background-size: contain;
 }
 
 .new_season_card_2 {
   background: url('../images/modal_2.png'), #E6E1E2;
   background-repeat: no-repeat;
   background-position: 6% top, center;
-  background-size: 43% 100%;
+  background-size: contain;
 }
 
 .heading h2 {
