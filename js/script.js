@@ -27,7 +27,7 @@ class CountdownTimer {
 
   getTimeRemaining(endtime) {
 	const total = Date.parse(endtime) - Date.parse(new Date());
-	console.dirxml(new Date())
+	// console.dirxml(new Date())
 	const days = Math.floor(total / (1000 * 60 * 60 * 24));
 	const hours = Math.floor((total / (1000 * 60 * 60)) % 24);
 	const mins = Math.floor((total / 1000 / 60) % 60);
@@ -80,7 +80,7 @@ class CountdownTimer {
 
 const timer1 = new CountdownTimer({
   selector: "#clock1",
-  targetDate: new Date("September, 19 2024 19:00:00"),
+  targetDate: new Date("September, 20 2024 19:00:00"),
 });
   
 timer1.startTimer();

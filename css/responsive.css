@@ -82,6 +82,14 @@
     height: 450px;
     background-position: top;
   }
+
+  .trending_products_section .swiper-button-next::after{
+    right: -30px;
+  }
+  
+  .trending_products_section .swiper-button-prev::after{
+    left: -30px;
+  }
 }
 
 @media(max-width:575px) {
@@ -161,6 +169,14 @@
 
   .offcanvas.offcanvas-start {
     width: 320px !important;
+  }
+
+  .trending_products_section .swiper-button-next::after{
+    right: -10px;
+  }
+  
+  .trending_products_section .swiper-button-prev::after{
+    left: -10px;
   }
 }
 

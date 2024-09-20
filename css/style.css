@@ -699,6 +699,27 @@ header .search_dropdown .dropdown-menu {
   background-color: transparent;
 }
 
+.trending_products_section .swiper-button-next,
+.trending_products_section .swiper-button-prev{
+  top: 0;
+}
+
+.trending_products_section .swiper-button-next::after,
+.trending_products_section .swiper-button-prev::after{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #000;
+  font-size: 26px;
+}
+
+.trending_products_section .swiper-button-next::after{
+  right: -50px;
+}
+
+.trending_products_section .swiper-button-prev::after{
+  left: -50px;
+}
 
 /* footer css */
 
