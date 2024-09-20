@@ -4,10 +4,21 @@
   }
 }
 
-
-@media(min-width:991px) {
+@media(min-width: 1300px) {
   header .form-group {
-    width: 30%;
+    width: 47%;
+  }
+}
+
+@media(min-width: 1200px) {
+  header .form-group {
+    width: 40%;
+  }
+}
+
+@media(max-width:1199px) {
+  .product_img_div img {
+    width: 370px;
   }
 }
 
@@ -41,22 +52,9 @@
   }
 }
 
-@media(min-width: 1200px) {
+@media(min-width:991px) {
   header .form-group {
-    width: 40%;
-  }
-}
-
-@media(min-width: 1300px) {
-  header .form-group {
-    width: 47%;
-  }
-}
-
-
-@media(max-width:1199px) {
-  .product_img_div img {
-    width: 370px;
+    width: 30%;
   }
 }
 
@@ -96,7 +94,7 @@
   }
 
   .logo img {
-    width: 180px !important;
+    width: 186px !important;
   }
 
   .count {
@@ -109,7 +107,7 @@
   }
 
   .main_navbar {
-    padding: 14px 0px;
+    padding: 16px 0px;
   }
 
   .banner_content {
@@ -183,7 +181,8 @@
     padding: 14px 35px;
     font-size: 16px !important;
   }
-  .success_card h2{
+
+  .success_card h2 {
     font-size: 24px !important;
   }
 }

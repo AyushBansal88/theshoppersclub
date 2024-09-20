@@ -93,7 +93,7 @@ h6 {
   color: #272726;
 }
 
-.container{
+.container {
   max-width: 92%;
 }
 
@@ -121,11 +121,11 @@ header.scroll_header {
 }
 
 header.scroll_header .main_navbar {
-  padding: 8px 0px;
+  padding: 12px 0px;
 }
 
-.scroll_header_padding{
-  padding-top: 210px !important; 
+.scroll_header_padding {
+  padding-top: 210px !important;
 }
 
 header.scroll_header .top_navbar {
@@ -225,19 +225,19 @@ header .form-group {
   width: 47%;
 }
 
-header .search_dropdown .btn::after{
+header .search_dropdown .btn::after {
   display: none;
 }
 
 header .search_dropdown .dropdown-menu {
   min-width: 260px;
-  transform: translate(-50% , -50%) !important;
+  transform: translate(-50%, -50%) !important;
   top: 55px !important;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   left: -65px !important;
 }
 
-.search_dropdown_li{
+.search_dropdown_li {
   display: none;
 }
 
@@ -331,9 +331,9 @@ header .search_dropdown .dropdown-menu {
 }
 
 .top_navbar .account_dropdown a {
-  font-weight: 500;
-  color: #939393;
-  font-size: 18px;
+  /* font-weight: 500; */
+  /* color: #939393; */
+  /* font-size: 18px; */
 }
 
 .top_navbar .account_dropdown {
@@ -419,23 +419,29 @@ header .search_dropdown .dropdown-menu {
 }
 
 @keyframes example {
-  0%   {transform: translateX(50px);}
- 
-  50% {transform: translateX(-50px);}
-  
-  100% {transform: translateX(0px);}
+  0% {
+    transform: translateX(50px);
+  }
+
+  50% {
+    transform: translateX(-50px);
+  }
+
+  100% {
+    transform: translateX(0px);
+  }
 }
 
-.carousel-item.active h1{
-  animation:  example 0.6s;
+.carousel-item.active h1 {
+  animation: example 0.6s;
 }
 
 .carousel-item.active h2,
-.carousel-item.active .shop_now{
+.carousel-item.active .shop_now {
   animation: example 0.9s;
 }
 
-.banner_section .carousel-item{
+.banner_section .carousel-item {
   opacity: 0.6;
   background-repeat: no-repeat !important;
   background-position: center !important;
@@ -739,7 +745,7 @@ footer .border-top {
 }
 
 .product_detail_page_btn .btn:active,
-.product_detail_page_btn .btn:hover{
+.product_detail_page_btn .btn:hover {
   background: #ff9320;
 }
 
@@ -751,7 +757,7 @@ footer .border-top {
   transition: all 0.4s ease;
 }
 
-.product_details_card .sticky-top{
+.product_details_card .sticky-top {
   top: 90px;
 }
 
@@ -759,7 +765,7 @@ footer .border-top {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
-.product_data tr td{
+.product_data tr td {
   vertical-align: top;
 }
 
@@ -818,34 +824,40 @@ footer .border-top {
   top: 9px;
 }
 
-.terms_card{
+.terms_card {
   background: #F1F1F3;
   font-size: 14px;
 }
 
 /* cart page css */
 
-.cart_table_heading_row{
+.cart_table_heading_row {
   background: #F1F1F3;
 }
 
-.cart_table th{
+.cart_table th {
   padding: 12px;
 }
 
 .cart_table td {
   padding: 24px 0;
+  min-width: 100px;
 }
 
-.cart_table tbody tr:hover{
+.cart_table tbody tr:hover {
   background: #9b9b9b85;
 }
 
-.total_amount_card{
+.product_title_td {
+  min-width: 300px !important
+}
+
+
+.total_amount_card {
   background: #F1F1F3;
 }
 
-.total_amount_card .btn{
+.total_amount_card .btn {
   padding: 10px 0;
 }
 
@@ -855,22 +867,22 @@ footer .border-top {
 }
 
 .radio-item label:after,
-.radio-item label:before{
+.radio-item label:before {
   content: "";
   position: absolute;
   border-radius: 100%;
   left: 18px;
   top: 33px;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
 }
 
 .payment_div .radio-item label::after,
-.payment_div .radio-item label::before{
+.payment_div .radio-item label::before {
   top: 32px;
   left: 17px;
 }
 
-.payment_div{
+.payment_div {
   background-color: #F7F7F7;
 }
 
@@ -878,7 +890,7 @@ footer .border-top {
   min-height: 16px;
   min-width: 16px;
   border: 1px solid #868686;
-  
+
 }
 
 .radio-item label:before {
@@ -890,13 +902,13 @@ footer .border-top {
   visibility: hidden;
 }
 
-.radio-item [type="radio"]:checked ~ label:before{
+.radio-item [type="radio"]:checked~label:before {
   opacity: 1;
   visibility: visible;
 }
 
-.radio-item [type="radio"]:checked ~ label:after{
-border:1px solid #EA5D11;
+.radio-item [type="radio"]:checked~label:after {
+  border: 1px solid #EA5D11;
 }
 
 .address_div .btn {
@@ -904,8 +916,6 @@ border:1px solid #EA5D11;
   padding: 16px 50px;
 }
 
-.redeem_div{
+.redeem_div {
   background: #F7F7F7;
 }
-/* fdhio;jhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh */
-
