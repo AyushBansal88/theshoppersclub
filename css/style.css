@@ -414,11 +414,11 @@ header .search_dropdown .dropdown-menu {
 
 @keyframes carousel_animation {
   0% {
-    transform: translateX(40px);
+    transform: translateX(25px);
   }
 
   50% {
-    transform: translateX(-40px);
+    transform: translateX(-25px);
   }
 
   100% {
