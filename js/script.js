@@ -1,3 +1,5 @@
+// ================= header scroll animation js ====================
+
 function onscroll_header() {
 	if (window.scrollY > 250) {
 		header.classList.add('scroll_header');
@@ -12,6 +14,8 @@ var banner = document.querySelector('.banner_section')
 window.addEventListener("scroll", onscroll_header);
 window.addEventListener("load", onscroll_header);
 
+
+// ================= search recommendation div js ==================
 
 const div = document.querySelector('.search_bar');
 const suggestion = document.querySelector('.search_recommendation');
@@ -31,6 +35,9 @@ div.addEventListener('focusout',()=>{
 	suggestion.classList.remove('activated');
 })
 
+
+// ============ product add to cart btn js ========================
+
 const add_to_cart_btn = document.querySelectorAll('.add_to_cart_btn');
 add_to_cart_btn.forEach((btn)=>btn.addEventListener('click',()=>{
 	if(btn.innerHTML == 'Add to Cart'){
@@ -49,74 +56,23 @@ add_to_wishlist_btn.forEach((btn)=>btn.addEventListener('click',()=>{
 }))
 
 
-class CountdownTimer {
-	constructor({ selector, targetDate }) {
-		this.selector = selector;
-		this.targetDate = targetDate;
-		this.refs = {
-			days: document.querySelector(`${this.selector} [data-value="days"]`),
-			hours: document.querySelector(`${this.selector} [data-value="hours"]`),
-			mins: document.querySelector(`${this.selector} [data-value="minutes"]`),
-			secs: document.querySelector(`${this.selector} [data-value="seconds"]`),
-		};
-	}
+// ============== lens js ========================
 
-	getTimeRemaining(endtime) {
-		const total = Date.parse(endtime) - Date.parse(new Date());
-		// console.dirxml(new Date())
-		const days = Math.floor(total / (1000 * 60 * 60 * 24));
-		const hours = Math.floor((total / (1000 * 60 * 60)) % 24);
-		const mins = Math.floor((total / 1000 / 60) % 60);
-		const secs = Math.floor((total / 1000) % 60);
-		return { days, hours, mins, secs };
-	}
+const lens = document.querySelector('.magnifier');
+const product_img = document.querySelector('.product_img_div');
+const magnified_img = document.querySelector('.magnified_image')
 
-	updateTimer({ days, hours, mins, secs }) {
-		if (days < 0) {
-			this.refs.days.textContent = 0 + 'D';
-		}
-		else {
-			this.refs.days.textContent = days + 'D';
-		}
-		if (hours < 0) {
-			this.refs.hours.textContent = 0 + 'H'
-		}
-		else {
-			this.refs.hours.textContent = hours + 'H';
-		}
-		if (mins < 0) {
-			this.refs.mins.textContent = 0 + 'M'
-		}
-		else {
-			this.refs.mins.textContent = mins + 'M';
-		}
-		if (secs < 0) {
-			this.refs.secs.textContent = 0 + 'S'
-		}
-		else {
-			this.refs.secs.textContent = secs + 'S';
-		}
-	}
-
-
-	startTimer() {
-		const timer = this.getTimeRemaining(this.targetDate);
-		this.updateTimer(timer);
-		setInterval(() => {
-			const timer = this.getTimeRemaining(this.targetDate);
-			this.updateTimer(timer);
-			//   console.log('called'+timer);
-			// console.dir(timer)
-			// console.info(timer)
-			// console.error(timer)
-			// console.debug(timer)
-		}, 1000);
-	}
+function magnify(product_img,magnified_img){
+	product_img?.addEventListener('mousemove' , movelens	)
 }
 
-const timer1 = new CountdownTimer({
-	selector: "#clock1",
-	targetDate: new Date("September, 22 2024 19:00:00"),
-});
+function movelens(e){
+	let x , y , cx , cy;
+	// get position of the cursor
+	const product_img_dimension = product_img.getBoundingClientRect();
+	x = e.pageX - product_img_dimension.left - lens.offsetWidth/2;
+	y = e.pageY - product_img_dimension.top - lens.offsetHeight/2;
+	lens.style.cssText = `top: ${y}px; left: ${x}px;`
+}
 
-timer1.startTimer();
+magnify(product_img,magnified_img)

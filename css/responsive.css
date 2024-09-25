@@ -90,6 +90,14 @@
   .trending_products_section .swiper-button-prev::after{
     left: -30px;
   }
+
+  .wishlist_dropdown:hover .dropdown-menu{
+    display: none !important;
+  }
+  
+  .cart_dropdown:hover .dropdown-menu{
+    display: none !important;
+  }
 }
 
 @media(max-width:575px) {

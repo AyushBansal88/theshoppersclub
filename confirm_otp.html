@@ -4,7 +4,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cart</title>
+    <title>Confirm OTP</title>
     <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="fonts/font.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -28,7 +28,7 @@
                   </a>
                   <span class="fw-normal">+91 9090909090</span>
                 </div>
-                <div class="dropdown">
+                <!-- <div class="dropdown">
                   <button class="btn dropdown-toggle my_account border-0 p-0 d-flex gap-2 pe-3" type="button" id="dropdownMenuButton1" 
                     data-bs-toggle="dropdown">
                     <img src="images/account_icon.png" alt="img" class="img-fluid header_icon" width="20">
@@ -36,18 +36,18 @@
                   </button>
                   <ul class="dropdown-menu account_dropdown">
                     <li>
-                      <a class="dropdown-item text_gray fw-medium" href="profile.html">
+                      <a class="dropdown-item text_gray fw-medium" href="#">
                         Profile
                       </a>
                     </li>
                     <li>
-                      <a class="dropdown-item text_gray fw-medium" href="login.html">
+                      <a class="dropdown-item text_gray fw-medium" href="#">
                         Log Out
                         <i class="fa-solid fa-arrow-right ps-2"></i>
                       </a>
                     </li>
                   </ul>
-                </div>
+                </div> -->
               </div>
             </div>
           </div>
@@ -945,96 +945,36 @@
     </header>
     <!--========== header section End ==========-->
 
-    <!--========== cart section ==========-->
-    <section class="banner_section pt-3">
+    <!--========== confirm otp section ==========-->
+    <section class="pt-3 banner_section">
       <div class="container">
-        <div class="row">
-          <div class="col">
-            <div class="d-sm-flex d-none gap-3 fw-semibold page_navigation pb-2">
-              <a href="index.html">
-                Home
-              </a>
-              >
-              <a href="#">
-                Cart
-              </a>
-            </div>
-            <div class="card border-0 bg-white p-sm-4 p-2 mt-2">
-              <div class="row gy-3">
-                <div class="col-xl-9 col-12">
-                  <div class="card rounded-1 p-sm-3 p-2 overflow-x-auto">
-                    <table class="tabl cart_table table-responsive">
-                      <thead>
-                        <tr class="cart_table_heading_row">
-                          <th class="ps-4 product_title_td">Product</th>
-                          <th class="text-center">Price</th>
-                          <th class="text-center">Quantity</th>
-                          <th class="text-center">Subtotal</th>
-                          <th></th>
-                        </tr>
-                      </thead>
-                      <tbody class="fw-semibold">
-                        <tr class="border-bottom">
-                          <td class="ps-4 product_title_td">
-                            <a href="product_detail.html" class="d-flex align-items-center gap-4">
-                              <img src="images/demo_product_3.png" alt="img" class="img-fluid" width="90">
-                              Jhecked flannel shirt - Black / L
-                            </a>
-                          </td>
-                          <td class="text-center">$45.00</td>
-                          <td class="text-center">1</td>
-                          <td class="text-center">$45.00</td>
-                          <td class="text-center pe-4">
-                            <a href="#">
-                              <img src="images/delete_icon.png" alt="img" class="img-fluid" width="30">
-                            </a>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td class="ps-4 product_title_td">
-                            <a href="product_detail.html" class="d-flex align-items-center gap-4">
-                              <img src="images/demo_product_3.png" alt="img" class="img-fluid" width="90">
-                              Jhecked flannel shirt - Black / L
-                            </a>
-                          </td>
-                          <td class="text-center">$45.00</td>
-                          <td class="text-center">1</td>
-                          <td class="text-center">$45.00</td>
-                          <td class="text-center pe-4">
-                            <a href="#">
-                              <img src="images/delete_icon.png" alt="img" class="img-fluid" width="30">
-                            </a>
-                          </td>
-                        </tr>
-                      </tbody>
-                    </table>
+        <div class="row justify-content-center">
+          <div class="col-5">
+            <div class="card common_card border-0 bg-white p-5">
+              <h4 class="mb-3 pb-2 fw-semibold text-center">Confirm OTP</h4>
+              <form class="row row-cols-1 gy-4 sign_up_form fw-normal">
+                <div class="col text-center">
+                  <label class="pb-3">Enter the OTP sent on your email address</label>
+                  <div class="d-flex gap-3 justify-content-center">
+                    <input class="form-control otp-input" type="text" maxlength="1"/>
+                    <input class="form-control otp-input" type="text" maxlength="1"/>
+                    <input class="form-control otp-input" type="text" maxlength="1"/>
+                    <input class="form-control otp-input" type="text" maxlength="1"/>
                   </div>
                 </div>
-                <div class="col-xl-3 col-lg-5 col-md-6 col-sm-8 col-12">
-                  <div class="card total_amount_card border-0 rounded-1 fw-semibold gap-2 p-sm-4 p-2">
-                    <div class="fw-bold fs-18">Cart Totals</div>
-                    <div class="d-flex justify-content-between pt-2">
-                      <span>Subtotals</span>
-                      <span>$45.00</span>
-                    </div>
-                    <div class="d-flex justify-content-between pb-3 border-bottom">
-                      <span>Shipping</span>
-                      <span>$5.00</span>
-                    </div>
-                    <div class="d-flex justify-content-between fw-bold pt-2">
-                      <span>Total</span>
-                      <span class="fs-18">$50.00</span>
-                    </div>
-                    <a href="checkout.html" class="btn checkout_btn mt-2 fw-semibold fs-18 rounded-1">Proceed</a>
-                  </div>
+                <div class="col text-center">
+                  <button class="btn border-0" type="button">Verify</button>
                 </div>
-              </div>
+                <div class="col text-center fw-medium">
+                  Did not received OTP <a href="#" class="text_orange fw-semibold">Resend</a>
+                </div>
+              </form>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <!--========== cart section End ==========-->
+    <!--========== confirm otp section End ==========-->
 
     <!--========== footer section section ==========-->
     <footer class="common_section bg-white mt-4">
@@ -1215,9 +1155,48 @@
     </footer>
     <!--========== footer section section End ==========-->
 
+    <!-- script for otp input -->
+    <script>
+      const inputs = document.querySelectorAll('.otp-input');
+
+      inputs.forEach((inp) => {
+        inp.addEventListener('input', function (e) {
+          const target = e.target;
+          const val = target.value;
+
+          if (isNaN(val)) {
+            target.value = "";
+            return;
+          }
+
+          if (val != "") {
+            const next = target.nextElementSibling;
+            if (next) {
+              next.focus();
+            }
+          }
+        })
+
+
+        inp.addEventListener("keyup", function (e) {
+          const target = e.target;
+          const key = e.key.toLowerCase();
+
+          if (key == "backspace" || key == "delete") {
+            target.value = "";
+            const prev = target.previousElementSibling;
+            if (prev) {
+              prev.focus();
+            }
+            return;
+          }
+        });
+      })
+    </script>
+
     <script src="js/all.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/script.js"></script>
-    
+
   </body>
 </html>

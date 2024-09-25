@@ -36,12 +36,12 @@
                   </button>
                   <ul class="dropdown-menu account_dropdown">
                     <li>
-                      <a class="dropdown-item text_gray fw-medium" href="#">
+                      <a class="dropdown-item text_gray fw-medium" href="profile.html">
                         Profile
                       </a>
                     </li>
                     <li>
-                      <a class="dropdown-item text_gray fw-medium" href="#">
+                      <a class="dropdown-item text_gray fw-medium" href="login.html">
                         Log Out
                         <i class="fa-solid fa-arrow-right ps-2"></i>
                       </a>
@@ -54,7 +54,7 @@
         </div>
       </nav>
       <!-- main navbar -->
-      <nav class="main_navbar bg-white">
+      <nav class="main_navbar">
         <div class="container">
           <div class="row row-cols-1">
             <div class="col d-flex align-items-center justify-content-between">
@@ -86,12 +86,12 @@
                   </div>
                 </li>
                 <li>
-                  <div class="dropdown">
+                  <div class="dropdown wishlist_dropdown">
                     <a href="#" class="d-md-none">
                       <img src="images/heart_icon.png" alt="img" class="img-fluid header_icon" width="32">
                       <div class="count fw-normal d-flex justify-content-center align-items-center position-absolute d-md-none">8</div>
                     </a>
-                    <button class="btn wishlist_btn dropdown-toggle border-0 d-md-flex d-none align-items-center gap-2 p-0" 
+                    <button class="btn header_dropdown_btn dropdown-toggle border-0 d-md-flex d-none align-items-center gap-2 p-0" 
                       type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" >
                       <img src="images/heart_icon.png" alt="img" class="img-fluid header_icon" width="32">
                       <div class="d-flex flex-column align-items-start">
@@ -171,12 +171,12 @@
                 </li>
                 <li class="vertical_hr d-md-block d-none"></li>
                 <li>
-                  <div class="dropdown">
+                  <div class="dropdown cart_dropdown">
                     <a href="cart.html" class="d-md-none">
                       <img src="images/cart_icon.png" alt="img" class="img-fluid header_icon" width="30">
                       <div class="count fw-normal d-flex justify-content-center align-items-center position-absolute d-md-none">4</div>
                     </a>
-                    <button class="btn wishlist_btn dropdown-toggle border-0 d-md-flex d-none align-items-center gap-2 p-0" 
+                    <button class="btn header_dropdown_btn dropdown-toggle border-0 d-md-flex d-none align-items-center gap-2 p-0" 
                       type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" >
                       <img src="images/cart_icon.png" alt="img" class="img-fluid header_icon" width="30">
                       <div class="d-flex flex-column align-items-start">
@@ -248,18 +248,18 @@
                 <div class="offcanvas-body p-0 pt-2">
                   <div class="accordion accordion-flush" id="accordionFlushExample">
                     <div class="accordion-item">
-                      <button class="accordion-button collapsed list_items" type="button" data-bs-toggle="collapse" 
-                        data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                      <button class="accordion-button list_items" type="button" data-bs-toggle="collapse" 
+                        data-bs-target="#flush-collapseOne" aria-expanded="true" aria-controls="flush-collapseOne">
                         MEN'S FASHION
                       </button>
-                      <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample" >
+                      <div id="flush-collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionFlushExample" >
                         <div class="accordion accordion-flush" id="men-fashion">
                           <div class="accordion-item">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
-                              data-bs-target="#flush-men-topwear" aria-expanded="false" aria-controls="flush-men-topwear">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" 
+                              data-bs-target="#flush-men-topwear" aria-expanded="true" aria-controls="flush-men-topwear">
                               Men's Top Wear
                             </button>
-                            <div id="flush-men-topwear" class="accordion-collapse collapse" data-bs-parent="#men-fashion" >
+                            <div id="flush-men-topwear" class="accordion-collapse collapse show" data-bs-parent="#men-fashion" >
                               <ul>
                                 <li class="product_links">
                                   <a href="#">All</a>
@@ -599,298 +599,342 @@
         </div>
       </nav>
       <!-- sub navbar -->
-      <nav class="sub_navbar bg-white">
+      <nav class="sub_navbar">
         <div class="container">
           <div class="row row-cols-1">
             <div class="col pb-1">
               <ul class="d-flex justify-content-evenly border-top py-3">
                 <li class="list-item">
                   <a href="javascript://">MEN'S FASHION</a>
-                  <div class="dropdown_div bg-white d-flex">
-                    <div>
-                      <h6 class="fw-semibold px-3">Men's Top Wear</h6>
-                      <ul>
-                        <li class="product_links">
-                          <a href="#">All</a>
-                        </li>
-                        <li class="product_links">
-                          <a href="#">Men's T-Shirts</a>
-                        </li>
-                        <li class="product_links">
-                          <a href="#">Men's Casual Shirts</a>
-                        </li>
-                        <li class="product_links">
-                          <a href="#">Men's Formal Shirts</a>
-                        </li>
-                        <li class="product_links">
-                          <a href="#">Men's Kurtas</a>
-                        </li>
-                        <li class="product_links">
-                          <a href="#">Men's Ethnic Sets</a>
-                        </li>
-                        <li class="product_links">
-                          <a href="#">Men's Blazers</a>
-                        </li>
-                        <li class="product_links">
-                          <a href="#">Men's Raincoat</a>
-                        </li>
-                        <li class="product_links">
-                          <a href="#">Men's Windcheaters</a>
-                        </li>
-                        <li class="product_links">
-                          <a href="#">Men's Suit</a>
-                        </li>
-                        <li class="product_links">
-                          <a href="#">Men's Fabrics</a>
-                        </li>
-                      </ul>
-                    </div>
-                    <div>
-                      <h6 class="fw-semibold px-3">Men's Bottom Wear</h6>
-                      <ul>
-                        <li class="product_links">
-                          <a href="#">All</a>
-                        </li>
-                        <li class="product_links">
-                          <a href="#">Men's Jeans</a>
-                        </li>
-                        <li class="product_links">
-                          <a href="#">Men's Trousers</a>
-                        </li>
-                        <li class="product_links">
-                          <a href="#">Men's Trackpants</a>
-                        </li>
-                        <li class="product_links">
-                          <a href="#">Men's Shorts</a>
-                        </li>
-                        <li class="product_links">
-                          <a href="#">Men's Cargos</a>
-                        </li>
-                        <li class="product_links">
-                          <a href="#">Men's Threefourths</a>
-                        </li>
-                        <li class="product_links">
-                          <a href="#">Men's Pyjamas & Loungepants</a>
-                        </li>
-                        <li class="product_links">
-                          <a href="#">Men's Dhoti</a>
-                        </li>
-                        <li class="product_links">
-                          <a href="#">Men's Ethnic Pyjama</a>
-                        </li>
-                      </ul>
+                  <div class="dropdown_div bg-white">
+                    <div class="row row-cols-2 gy-3">
+                      <div class="col">
+                        <h6 class="fw-semibold pb-2 ps-3">Men's Top Wear</h6>
+                        <div class="row row-cols-xxl-3 row-cols-2">
+                          <div class="col">
+                            <a href="#" class="product_links">All</a>
+                          </div>
+                          <div class="col">
+                            <a href="#" class="product_links">Men's T-Shirts</a>
+                          </div>
+                          <div class="col">
+                            <a href="#" class="product_links">Men's Casual Shirts</a>
+                          </div>
+                          <div class="col">
+                            <a href="#" class="product_links">Men's Formal Shirts</a>
+                          </div>
+                          <div class="col">
+                            <a href="#" class="product_links">Men's Kurtas</a>
+                          </div>
+                          <div class="col">
+                            <a href="#" class="product_links">Men's Ethnic Sets</a>
+                          </div>
+                          <div class="col">
+                            <a href="#" class="product_links">Men's Blazers</a>
+                          </div>
+                          <div class="col">
+                            <a href="#" class="product_links">Men's Raincoat</a>
+                          </div>
+                          <div class="col">
+                            <a href="#" class="product_links">Men's Windcheaters</a>
+                          </div>
+                          <div class="col">
+                            <a href="#" class="product_links">Men's Suit</a>
+                          </div>
+                          <div class="col">
+                            <a href="#" class="product_links">Men's Fabrics</a>
+                          </div>
+                          <div class="col">  
+                            <a href="#" class="product_links">Men's Gloves</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <h6 class="fw-semibold pb-2 ps-3">Men's Bottom Wear</h6>
+                        <div class="row row-cols-xxl-3 row-cols-2">
+                          <div class="col">
+                            <a href="#" class="product_links">All</a>
+                          </div>
+                          <div class="col">
+                            <a href="#" class="product_links">Men's Jeans</a>
+                          </div>
+                          <div class="col">
+                            <a href="#" class="product_links">Men's Trousers</a>
+                          </div>
+                          <div class="col">
+                            <a href="#" class="product_links">Men's Trackpants</a>
+                          </div>
+                          <div class="col">
+                            <a href="#" class="product_links">Men's Shorts</a>
+                          </div>
+                          <div class="col">
+                            <a href="#" class="product_links">Men's Cargos</a>
+                          </div>
+                          <div class="col">
+                            <a href="#" class="product_links">Men's Threefourths</a>
+                          </div>
+                          <div class="col">
+                            <a href="#" class="product_links">Men's Pyjamas</a>
+                          </div>
+                          <div class="col">
+                            <a href="#" class="product_links">Men's Loungepants</a>
+                          </div>
+                          <div class="col">                   
+                            <a href="#" class="product_links">Men's Dhoti</a>
+                          </div>
+                          <div class="col">
+                            <a href="#" class="product_links">Men's Ethnic Pyjama</a>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </li>
                 <li class="list-item">
                   <a href="javascript://">WOMEN'S FASHION</a>
-                  <div class="dropdown_div bg-white d-flex">
-                    <div>
-                      <h6 class="fw-semibold px-3">Women's Top Wear</h6>
-                      <ul>
-                        <li class="product_links">
-                          <a href="#">All</a>
-                        </li>
-                        <li class="product_links">
-                          <a href="#">Women's T-Shirts</a>
-                        </li>
-                        <li class="product_links">
-                          <a href="#">Women's Casual Shirts</a>
-                        </li>
-                        <li class="product_links">
-                          <a href="#">Women's Formal Shirts</a>
-                        </li>
-                        <li class="product_links">
-                          <a href="#">Women's Kurtas</a>
-                        </li>
-                        <li class="product_links">
-                          <a href="#">Women's Ethnic Sets</a>
-                        </li>
-                        <li class="product_links">
-                          <a href="#">Women's Blazers</a>
-                        </li>
-                        <li class="product_links">
-                          <a href="#">Women's Raincoat</a>
-                        </li>
-                        <li class="product_links">
-                          <a href="#">Women's Windcheaters</a>
-                        </li>
-                        <li class="product_links">
-                          <a href="#">Women's Suit</a>
-                        </li>
-                        <li class="product_links">
-                          <a href="#">Women's Fabrics</a>
-                        </li>
-                      </ul>
-                    </div>
-                    <div>
-                      <h6 class="fw-semibold px-3">Women's Bottom Wear</h6>
-                      <ul>
-                        <li class="product_links">
-                          <a href="#">All</a>
-                        </li>
-                        <li class="product_links">
-                          <a href="#">Women's Jeans</a>
-                        </li>
-                        <li class="product_links">
-                          <a href="#">Women's Trousers</a>
-                        </li>
-                        <li class="product_links">
-                          <a href="#">Women's Trackpants</a>
-                        </li>
-                        <li class="product_links">
-                          <a href="#">Women's Shorts</a>
-                        </li>
-                        <li class="product_links">
-                          <a href="#">Women's Cargos</a>
-                        </li>
-                        <li class="product_links">
-                          <a href="#">Women's Threefourths</a>
-                        </li>
-                        <li class="product_links">
-                          <a href="#">Women's Pyjamas & Loungepants</a>
-                        </li>
-                        <li class="product_links">
-                          <a href="#">Women's Dhoti</a>
-                        </li>
-                        <li class="product_links">
-                          <a href="#">Women's Ethnic Pyjama</a>
-                        </li>
-                      </ul>
+                  <div class="dropdown_div bg-white">
+                    <div class="row row-cols-2 gy-3">
+                      <div class="col">
+                        <h6 class="fw-semibold pb-2 ps-3">Women's Top Wear</h6>
+                        <div class="row row-cols-xxl-3 row-cols-2">
+                          <div class="col">
+                            <a href="#" class="product_links">All</a>
+                          </div>
+                          <div class="col">
+                            <a href="#" class="product_links">Women's T-Shirts</a>
+                          </div>
+                          <div class="col">
+                            <a href="#" class="product_links">Women's Casual Shirts</a>
+                          </div>
+                          <div class="col">
+                            <a href="#" class="product_links">Women's Formal Shirts</a>
+                          </div>
+                          <div class="col">
+                            <a href="#" class="product_links">Women's Kurtas</a>
+                          </div>
+                          <div class="col">
+                            <a href="#" class="product_links">Women's Ethnic Sets</a>
+                          </div>
+                          <div class="col">
+                            <a href="#" class="product_links">Women's Blazers</a>
+                          </div>
+                          <div class="col">
+                            <a href="#" class="product_links">Women's Raincoat</a>
+                          </div>
+                          <div class="col">
+                            <a href="#" class="product_links">Women's Windcheaters</a>
+                          </div>
+                          <div class="col">
+                            <a href="#" class="product_links">Women's Suit</a>
+                          </div>
+                          <div class="col">
+                            <a href="#" class="product_links">Women's Fabrics</a>
+                          </div>
+                          <div class="col">
+                            <a href="#" class="product_links">Women's Gloves</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <h6 class="fw-semibold pb-2 ps-3">Women's Bottom Wear</h6>
+                        <div class="row row-cols-xxl-3 row-cols-2">
+                          <div class="col">
+                            <a href="#" class="product_links">All</a>
+                          </div>
+                          <div class="col">
+                            <a href="#" class="product_links">Women's Jeans</a>
+                          </div>
+                          <div class="col">
+                            <a href="#" class="product_links">Women's Trousers</a>
+                          </div>
+                          <div class="col">
+                            <a href="#" class="product_links">Women's Trackpants</a>
+                          </div>
+                          <div class="col">
+                            <a href="#" class="product_links">Women's Shorts</a>
+                          </div>
+                          <div class="col">
+                            <a href="#" class="product_links">Women's Cargos</a>
+                          </div>
+                          <div class="col">
+                            <a href="#" class="product_links">Women's Threefourths</a>
+                          </div>
+                          <div class="col">
+                            <a href="#" class="product_links">Women's Pyjamas</a>
+                          </div>
+                          <div class="col">
+                            <a href="#" class="product_links">Women's Loungepants</a>
+                          </div>
+                          <div class="col">
+                            <a href="#" class="product_links">Women's Dhoti</a>
+                          </div>
+                          <div class="col">
+                            <a href="#" class="product_links">Women's Ethnic Pyjama</a>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </li>
                 <li class="list-item">
                   <a href="javascript://">KIDS FASHION</a>
-                  <div class="dropdown_div bg-white d-flex">
-                    <div>
-                      <h6 class="fw-semibold px-3">Kid's Top Wear</h6>
-                      <ul>
-                        <li class="product_links">
-                          <a href="#">All</a>
-                        </li>
-                        <li class="product_links">
-                          <a href="#">Kid's T-Shirts</a>
-                        </li>
-                        <li class="product_links">
-                          <a href="#">Kid's Casual Shirts</a>
-                        </li>
-                        <li class="product_links">
-                          <a href="#">Kid's Formal Shirts</a>
-                        </li>
-                        <li class="product_links">
-                          <a href="#">Kid's Kurtas</a>
-                        </li>
-                        <li class="product_links">
-                          <a href="#">Kid's Ethnic Sets</a>
-                        </li>
-                        <li class="product_links">
-                          <a href="#">Kid's Blazers</a>
-                        </li>
-                        <li class="product_links">
-                          <a href="#">Kid's Raincoat</a>
-                        </li>
-                        <li class="product_links">
-                          <a href="#">Kid's Windcheaters</a>
-                        </li>
-                        <li class="product_links">
-                          <a href="#">Kid's Suit</a>
-                        </li>
-                        <li class="product_links">
-                          <a href="#">Kid's Fabrics</a>
-                        </li>
-                      </ul>
-                    </div>
-                    <div>
-                      <h6 class="fw-semibold px-3">Kid's Bottom Wear</h6>
-                      <ul>
-                        <li class="product_links">
-                          <a href="#">All</a>
-                        </li>
-                        <li class="product_links">
-                          <a href="#">Kid's Jeans</a>
-                        </li>
-                        <li class="product_links">
-                          <a href="#">Kid's Trousers</a>
-                        </li>
-                        <li class="product_links">
-                          <a href="#">Kid's Trackpants</a>
-                        </li>
-                        <li class="product_links">
-                          <a href="#">Kid's Shorts</a>
-                        </li>
-                        <li class="product_links">
-                          <a href="#">Kid's Cargos</a>
-                        </li>
-                        <li class="product_links">
-                          <a href="#">Kid's Threefourths</a>
-                        </li>
-                        <li class="product_links">
-                          <a href="#">Kid's Pyjamas & Loungepants</a>
-                        </li>
-                        <li class="product_links">
-                          <a href="#">Kid's Dhoti</a>
-                        </li>
-                        <li class="product_links">
-                          <a href="#">Kid's Ethnic Pyjama</a>
-                        </li>
-                      </ul>
+                  <div class="dropdown_div bg-white">
+                    <div class="row row-cols-2 gy-3">
+                      <div class="col">
+                        <h6 class="fw-semibold pb-2 ps-3">Kid's Top Wear</h6>
+                        <div class="row row-cols-xxl-3 row-cols-2">
+                          <div class="col">
+                            <a href="#" class="product_links">All</a>
+                          </div>
+                          <div class="col">
+                            <a href="#" class="product_links">Kid's T-Shirts</a>
+                          </div>
+                          <div class="col">
+                            <a href="#" class="product_links">Kid's Casual Shirts</a>
+                          </div>
+                          <div class="col">
+                            <a href="#" class="product_links">Kid's Formal Shirts</a>
+                          </div>
+                          <div class="col">
+                            <a href="#" class="product_links">Kid's Kurtas</a>
+                          </div>
+                          <div class="col">
+                            <a href="#" class="product_links">Kid's Ethnic Sets</a>
+                          </div>
+                          <div class="col">
+                            <a href="#" class="product_links">Kid's Blazers</a>
+                          </div>
+                          <div class="col">
+                            <a href="#" class="product_links">Kid's Raincoat</a>
+                          </div>
+                          <div class="col">
+                            <a href="#" class="product_links">Kid's Windcheaters</a>
+                          </div>
+                          <div class="col">
+                            <a href="#" class="product_links">Kid's Suit</a>
+                          </div>
+                          <div class="col">
+                            <a href="#" class="product_links">Kid's Fabrics</a>
+                          </div>
+                          <div class="col">
+                            <a href="#" class="product_links">Kid's Gloves</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <h6 class="fw-semibold pb-2 ps-3">Kid's Bottom Wear</h6>
+                        <div class="row row-cols-xxl-3 row-cols-2">
+                          <div class="col">
+                            <a href="#" class="product_links">All</a>
+                          </div>
+                          <div class="col">
+                            <a href="#" class="product_links">Kid's Jeans</a>
+                          </div>
+                          <div class="col">
+                            <a href="#" class="product_links">Kid's Trousers</a>
+                          </div>
+                          <div class="col">
+                            <a href="#" class="product_links">Kid's Trackpants</a>
+                          </div>
+                          <div class="col">
+                            <a href="#" class="product_links">Kid's Shorts</a>
+                          </div>
+                          <div class="col">
+                            <a href="#" class="product_links">Kid's Cargos</a>
+                          </div>
+                          <div class="col">
+                            <a href="#" class="product_links">Kid's Threefourths</a>
+                          </div>
+                          <div class="col">
+                            <a href="#" class="product_links">Kid's Pyjamas</a>
+                          </div>
+                          <div class="col">
+                            <a href="#" class="product_links">Kid's Loungepants</a>
+                          </div>
+                          <div class="col">
+                            <a href="#" class="product_links">Kid's Dhoti</a>
+                          </div>
+                          <div class="col">
+                            <a href="#" class="product_links">Kid's Ethnic Pyjama</a>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </li>
                 <li class="list-item">
                   <a href="javascript://">ELECTRONICS</a>
                   <div class="dropdown_div bg-white">
-                    <h6 class="fw-semibold px-3">ELECTRONICS</h6>
-                    <ul>
-                      <li class="product_links">
-                        <a href="#">All</a>
-                      </li>
-                    </ul>
+                    <div class="row row-cols-2">
+                      <div class="col">
+                      <h6 class="fw-semibold pb-2 ps-3">ELECTRONICS</h6>
+                        <div class="row row-cols-xxl-3 row-cols-2">
+                          <div class="col">
+                            <a href="#" class="product_links">All</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </li>
                 <li class="list-item">
                   <a href="javascript://">HOME & KITCHEN</a>
                   <div class="dropdown_div bg-white">
-                    <h6 class="fw-semibold px-3">HOME & KITCHEN</h6>
-                    <ul>
-                      <li class="product_links">
-                        <a href="#">All</a>
-                      </li>
-                    </ul>
+                    <div class="row row-cols-2">
+                      <div class="col">
+                      <h6 class="fw-semibold pb-2 ps-3">HOME & KITCHEN</h6>
+                        <div class="row row-cols-xxl-3 row-cols-2">
+                          <div class="col">
+                            <a href="#" class="product_links">All</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </li>
                 <li class="list-item">
                   <a href="javascript://">BEAUTY</a>
                   <div class="dropdown_div bg-white">
-                    <h6 class="fw-semibold px-3">BEAUTY</h6>
-                    <ul>
-                      <li class="product_links">
-                        <a href="#">All</a>
-                      </li>
-                    </ul>
+                    <div class="row row-cols-2">
+                      <div class="col">
+                      <h6 class="fw-semibold pb-2 ps-3">BEAUTY</h6>
+                        <div class="row row-cols-xxl-3 row-cols-2">
+                          <div class="col">
+                            <a href="#" class="product_links">All</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </li>
                 <li class="list-item">
                   <a href="javascript://">SPORTS & FITNESS</a>
                   <div class="dropdown_div bg-white">
-                    <h6 class="fw-semibold px-3">SPORTS & FITNESS</h6>
-                    <ul>
-                      <li class="product_links">
-                        <a href="#">All</a>
-                      </li>
-                    </ul>
+                    <div class="row row-cols-2">
+                      <div class="col">
+                      <h6 class="fw-semibold pb-2 ps-3">SPORTS & FITNESS</h6>
+                        <div class="row row-cols-xxl-3 row-cols-2">
+                          <div class="col">
+                            <a href="#" class="product_links">All</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </li>
                 <li class="list-item">
                   <a href="javascript://">TOYS</a>
                   <div class="dropdown_div bg-white">
-                    <h6 class="fw-semibold px-3">TOYS</h6>
-                    <ul>
-                      <li class="product_links">
-                        <a href="#">All</a>
-                      </li>
-                    </ul>
+                    <div class="row row-cols-2">
+                      <div class="col">
+                      <h6 class="fw-semibold pb-2 ps-3">TOYS</h6>
+                        <div class="row row-cols-xxl-3 row-cols-2">
+                          <div class="col">
+                            <a href="#" class="product_links">All</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </li>
               </ul>
@@ -948,14 +992,14 @@
     <footer class="common_section bg-white mt-4">
       <div class="container">
         <div class="row gy-3">
-          <div class="col-md-4 col-12">
+          <div class="col-md-4 col-12 text_gray fw-medium">
             <a href="index.html" class="footer_logo">
               <img src="images/logo.png" alt="img" class="img-fluid" width="320">
             </a>
-            <p class="fw-bold pt-2">
+            <p class="pt-2">
               Quis ipsum suspendisse ultrices gravida. Risus commodoviverr maecenas accumsan lacus ve facilisis in termapol.
             </p>
-            <ul class="fw-bold d-flex flex-column gap-2">
+            <ul class="d-flex flex-column gap-2">
               <li>
                 <a href="#" class="d-flex gap-2 align-items-center">
                   <img src="images/telephone_icon.png" alt="img" width="15">
@@ -1112,7 +1156,7 @@
                 </ul>
               </div>
               <div class="col-md-6 col-12 text-center order-md-1">
-                <span class="fw-bold">
+                <span class="fw-medium text_gray">
                   2024. Theshoppersclub. All Rights Reserved
                 </span>
               </div>
@@ -1126,5 +1170,6 @@
     <script src="js/all.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/script.js"></script>
+    
   </body>
 </html>
