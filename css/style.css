@@ -370,7 +370,7 @@ header .search_dropdown .dropdown-menu {
 }
 
 .offcanvas.offcanvas-start {
-  width: 370px;
+  width: 330px;
 }
 
 .offcanvas .accordion-button::after {
@@ -1086,10 +1086,10 @@ footer .border-top {
 .profile_row .nav-link:hover {
   color: #EA5D11;
 }
-
+/* 
 .profile_row .position-sticky {
   top: 105px;
-}
+} */
 
 .profile_row .btn {
   background-color: #EA5D11;
@@ -1116,7 +1116,7 @@ input::-webkit-inner-spin-button {
 }
 
 input[type=number] {
-  -moz-appearance: textfield;
+  appearance: textfield;
 }
 
 .orders_card{
