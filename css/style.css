@@ -178,8 +178,8 @@ header .dropdown_div {
   transition: all .3s ease-in-out;
   z-index: 1;
   box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
-  left: 70px;
-  right: 70px;
+  left: 50px;
+  right: 50px;
   top: 205px;
 }
 
@@ -401,18 +401,19 @@ header .search_dropdown .dropdown-menu {
   background: #F1F1F3;
 }
 
+/* 
 .accordion-button:not(.collapsed) {
-  /* background-color: #c0c0c0 !important; */
+  background-color: #c0c0c0 !important;
 }
 
 .list_items:not(.collapsed) {
-  /* background-color: #37343485 !important; */
+  background-color: #37343485 !important;
 }
 
 .offcanvas .accordion-button:not(.collapsed)::after {
-  /* background: #000; */
-}
-
+  background: #000;
+} 
+*/
 .offcanvas .accordion-button {
   color: #272726 !important;
 }
@@ -1063,4 +1064,116 @@ footer .border-top {
   width: 60px;
   height: 60px;
   text-align: center;
+}
+
+.profile_row .nav-link {
+  text-align: justify;
+  width: max-content;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  color: #272726;
+  padding: 0;
+  font-weight: 600;
+  /* font-size: 18px; */
+}
+
+.profile_row .nav-link.active {
+  color: #EA5D11;
+  background-color: #fff;
+}
+
+.profile_row .nav-link:hover {
+  color: #EA5D11;
+}
+
+.profile_row .position-sticky {
+  top: 105px;
+}
+
+.profile_row .btn {
+  background-color: #EA5D11;
+  color: #fff;
+  padding: 8px 30px;
+}
+
+.profile_row .form-control,
+.profile_row .form-select {
+  padding: 12px;
+  box-shadow: none;
+  border-radius: 4px;
+}
+
+.profile_row .form-control:focus,
+.profile_row .form-select:focus {
+  border-color: #EA5D11;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.orders_card{
+  background-color: #fff;
+  /* box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; */
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.orders_card .card_header{
+  background:  #F1F1F3;
+}
+
+.wallet_details_card{
+  background-color: #F1F1F3;
+}
+
+.add_address{
+  border: 2px dashed #939393;
+  color: #939393;
+  font-size: 18px;
+}
+
+.address_col .btn {
+  border: 1px solid transparent;
+  padding: 2px 10px;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.address_col .secondary_btn{
+  background-color: #fff;
+  border-color: #EA5D11;
+  color: #EA5D11;
+}
+
+.rating_ul svg{
+  color: #9b9b9b85;
+  cursor: pointer;
+}
+
+.rating_ul .golden_color svg{
+  color: goldenrod;
+}
+
+.reviews_card ul.position-absolute{
+  right: 0;
+  top: 50px;
+  color: #EA5D11;
+}
+
+.reviews_card{
+  border-radius: 0;
+  padding: 20px;
+}
+
+.reviews_card:hover{
+  background: #F1F1F3;
 }

@@ -959,21 +959,523 @@
                 Profile
               </a>
             </div>
-            <div class="row">
+            <div class="row profile_row g-3">
               <div class="col-3">
-                <div class="card p-5 border-0 shadow-sm">
-                </div>
-                <div class="card p-5 border-0 mt-4 shadow-sm">
-                  <div class="p-5">
-                    <div class="p-5">
+                <div class="position-sticky">
+                  <div class="card p-3 border-0 rounded-1 shadow-sm flex-row gap-2 align-items-center">
+                    <img src="images/user_icon.png" alt="img" class="img-fluid" width="55">
+                    <div class="d-flex flex-column justify-content-center">
+                      <span class="text_gray fw-normal mb-1">Hello,👋</span>
+                      <h5 class="m-0">Pixel Softwares</h5>
+                    </div>
+                  </div>
+                  <div class="card p-4 border-0 rounded-1 mt-3 shadow-sm align-items-center">
+                    <div class="nav flex-column nav-pills gap-4" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                      <button class="nav-link active" id="v-pills-my_account-tab" data-bs-toggle="pill" data-bs-target="#v-pills-my_account"
+                        type="button" role="tab" aria-controls="v-pills-my_account" aria-selected="true">
+                        <i class="fa-regular fa-circle-user"></i>
+                        My Account
+                      </button>
+                      <button class="nav-link" id="v-pills-my_orders-tab" data-bs-toggle="pill" data-bs-target="#v-pills-my_orders"
+                        type="button" role="tab" aria-controls="v-pills-my_orders" aria-selected="false">
+                        <i class="fa-solid fa-clipboard-list"></i>
+                        My Orders
+                      </button>
+                      <button class="nav-link" id="v-pills-my_wallet-tab" data-bs-toggle="pill" data-bs-target="#v-pills-my_wallet"
+                        type="button" role="tab" aria-controls="v-pills-my_wallet" aria-selected="false">
+                        <i class="fa-solid fa-wallet"></i>
+                        My Wallet
+                      </button>
+                      <button class="nav-link" id="v-pills-address-tab" data-bs-toggle="pill" data-bs-target="#v-pills-address"
+                        type="button" role="tab" aria-controls="v-pills-address" aria-selected="false">
+                        <i class="fa-regular fa-address-book"></i>
+                        Address
+                      </button>
+                      <button class="nav-link" id="v-pills-reviews-tab" data-bs-toggle="pill" data-bs-target="#v-pills-reviews"
+                        type="button" role="tab" aria-controls="v-pills-reviews" aria-selected="false">
+                        <i class="fa-regular fa-star"></i>
+                        My Reviews
+                      </button>
+                      <a class="nav-link" href="login.html">
+                        <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                        Log Out
+                      </a>
                     </div>
                   </div>
                 </div>
               </div>
               <div class="col-9">
-                <div class="card p-5 border-0 h-100 shadow-sm">
-                  <div class="p-5">
-                    <div class="p-5">
+                <div class="card p-4 border-0 rounded-1 h-100 shadow-sm">
+                  <div class="tab-content" id="v-pills-tabContent">
+                    <div class="tab-pane fade show active p-2" id="v-pills-my_account" role="tabpanel" 
+                      aria-labelledby="v-pills-my_account-tab" tabindex="0">
+                      <div class="row row-cols-1">
+                        <div class="col">
+                          <h5 class="border-bottom pb-3 fw-semibold">Personal Information</h5>
+                          <form class="row g-4 mt-3 fw-medium">
+                            <div class="col-4">
+                              <label for="validationCustom01" class="form-label">Name</label>
+                              <input type="text" class="form-control" id="validationCustom01" value="Pixel Softwares">
+                            </div>
+                            <div class="col-4">
+                              <label for="validationCustom02" class="form-label">Birth Date</label>
+                              <input type="date" class="form-control" id="validationCustom02" value="2014-01-19">
+                            </div>
+                            <div class="col"></div>
+                            <div class="col-4">
+                              <label for="validationCustom03" class="form-label">Mobile Number</label>
+                              <input type="number" class="form-control" id="validationCustom03" value="9874562235">
+                            </div>
+                            <div class="col-4">
+                              <label for="validationCustom04" class="form-label">Gender</label>
+                              <select class="form-select" id="validationCustom04">
+                                <option>Prefer not to say</option>
+                                <option selected>Male</option>
+                                <option>Female</option>
+                              </select>
+                            </div>
+                            <div class="col-12">
+                              <button class="btn rounded-1 border-0" type="button">Save</button>
+                            </div>
+                          </form>
+                          <h5 class="border-bottom pb-2 fw-semibold mt-4">Password</h5>
+                          <form class="row g-4 mt-3 fw-medium">
+                            <div class="col-4">
+                              <label class="form-label">Old Password</label>
+                              <input type="password" class="form-control" placeholder="Old Password">
+                            </div>
+                            <div class="col-4">
+                              <label class="form-label">New Password</label>
+                              <input type="password" class="form-control" placeholder="New Password">
+                            </div>
+                            <div class="col"></div>
+                            <div class="col-4">
+                              <label class="form-label">Confirm Password</label>
+                              <input type="password" class="form-control" placeholder="Confirm Password">
+                            </div>
+                            <div class="col-12">
+                              <button class="btn rounded-1 border-0" type="button">Save</button>
+                            </div>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tab-pane fade p-2" id="v-pills-my_orders" role="tabpanel" aria-labelledby="v-pills-my_orders-tab" 
+                      tabindex="0">
+                      <div class="row row-cols-1">
+                        <div class="col">
+                          <h5 class="border-bottom pb-3 mb-4 fw-semibold">Order History</h5>
+                          <div class="d-flex flex-column gap-5">
+                            <div class="card border-0 orders_card">
+                              <div class="p-3 d-flex justify-content-between align-items-center card_header">
+                                <div class="d-flex gap-2 align-items-center">
+                                  <img src="images/order_img.png" alt="img" class="img-fluid" width="50">
+                                  <div>
+                                    <div class="fw-semibold text-success">Order Booked</div>
+                                    <div class="fw-medium">25-sep-2024</div>
+                                  </div>
+                                </div>
+                                <div class="fw-medium">Order Id: <a href="#" class="text_orange">5584543</a></div>
+                              </div>
+                              <div class="card_body p-3 bg-white d-flex justify-content-between align-items-center">
+                                <div class="d-flex gap-2">
+                                  <img src="images/demo_product_1.png" alt="img" class="img-fluid" width="160">
+                                  <div class="fw-medium d-flex flex-column justify-content-between">
+                                    <div>
+                                      <div class="text_gray">Rebook</div>
+                                      <div>Basic Colored Sweatpants with elastic Hems</div>
+                                      <div class="text_orange fw-semibold pt-2">
+                                        <span class="text_gray text-decoration-line-through">$199</span>
+                                        &nbsp;
+                                        $99 
+                                      </div>
+                                    </div>
+                                    <ul class="d-flex gap-3">
+                                      <li>Color: <strong>Black</strong></li>
+                                      <li>Size: <strong>M</strong></li>
+                                      <li>Qty: <strong>1</strong></li>
+                                    </ul>
+                                  </div>
+                                </div>
+                                <div>
+                                  <button class="btn rounded-1  ">Cancel Order</button>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="card border-0 orders_card">
+                              <div class="p-3 d-flex justify-content-between align-items-center card_header">
+                                <div class="d-flex gap-2 align-items-center">
+                                  <img src="images/order_img.png" alt="img" class="img-fluid" width="50">
+                                  <div>
+                                    <div class="fw-semibold text-success">Order Booked</div>
+                                    <div class="fw-medium">25-sep-2024</div>
+                                  </div>
+                                </div>
+                                <div class="fw-medium">Order Id: <a href="#" class="text_orange">5584543</a></div>
+                              </div>
+                              <div class="card_body p-3 bg-white d-flex justify-content-between align-items-center">
+                                <div class="d-flex gap-2">
+                                  <img src="images/demo_product_1.png" alt="img" class="img-fluid" width="160">
+                                  <div class="fw-medium d-flex flex-column justify-content-between">
+                                    <div>
+                                      <div class="text_gray">Rebook</div>
+                                      <div>Basic Colored Sweatpants with elastic Hems</div>
+                                      <div class="text_orange fw-semibold pt-2">
+                                        <span class="text_gray text-decoration-line-through">$199</span>
+                                        &nbsp;
+                                        $99 
+                                      </div>
+                                    </div>
+                                    <ul class="d-flex gap-3">
+                                      <li>Color: <strong>Black</strong></li>
+                                      <li>Size: <strong>M</strong></li>
+                                      <li>Qty: <strong>1</strong></li>
+                                    </ul>
+                                  </div>
+                                </div>
+                                <div>
+                                  <button class="btn rounded-1  ">Cancel Order</button>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="card border-0 orders_card">
+                              <div class="p-3 d-flex justify-content-between align-items-center card_header">
+                                <div class="d-flex gap-2 align-items-center">
+                                  <img src="images/order_img.png" alt="img" class="img-fluid" width="50">
+                                  <div>
+                                    <div class="fw-semibold text-success">Order Booked</div>
+                                    <div class="fw-medium">25-sep-2024</div>
+                                  </div>
+                                </div>
+                                <div class="fw-medium">Order Id: <a href="#" class="text_orange">5584543</a></div>
+                              </div>
+                              <div class="card_body p-3 bg-white d-flex justify-content-between align-items-center">
+                                <div class="d-flex gap-2">
+                                  <img src="images/demo_product_1.png" alt="img" class="img-fluid" width="160">
+                                  <div class="fw-medium d-flex flex-column justify-content-between">
+                                    <div>
+                                      <div class="text_gray">Rebook</div>
+                                      <div>Basic Colored Sweatpants with elastic Hems</div>
+                                      <div class="text_orange fw-semibold pt-2">
+                                        <span class="text_gray text-decoration-line-through">$199</span>
+                                        &nbsp;
+                                        $99 
+                                      </div>
+                                    </div>
+                                    <ul class="d-flex gap-3">
+                                      <li>Color: <strong>Black</strong></li>
+                                      <li>Size: <strong>M</strong></li>
+                                      <li>Qty: <strong>1</strong></li>
+                                    </ul>
+                                  </div>
+                                </div>
+                                <div>
+                                  <button class="btn rounded-1  ">Cancel Order</button>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="card border-0 orders_card">
+                              <div class="p-3 d-flex justify-content-between align-items-center card_header">
+                                <div class="d-flex gap-2 align-items-center">
+                                  <img src="images/order_img.png" alt="img" class="img-fluid" width="50">
+                                  <div>
+                                    <div class="fw-semibold text-success">Order Booked</div>
+                                    <div class="fw-medium">25-sep-2024</div>
+                                  </div>
+                                </div>
+                                <div class="fw-medium">Order Id: <a href="#" class="text_orange">5584543</a></div>
+                              </div>
+                              <div class="card_body p-3 bg-white d-flex justify-content-between align-items-center">
+                                <div class="d-flex gap-2">
+                                  <img src="images/demo_product_1.png" alt="img" class="img-fluid" width="160">
+                                  <div class="fw-medium d-flex flex-column justify-content-between">
+                                    <div>
+                                      <div class="text_gray">Rebook</div>
+                                      <div>Basic Colored Sweatpants with elastic Hems</div>
+                                      <div class="text_orange fw-semibold pt-2">
+                                        <span class="text_gray text-decoration-line-through">$199</span>
+                                        &nbsp;
+                                        $99 
+                                      </div>
+                                    </div>
+                                    <ul class="d-flex gap-3">
+                                      <li>Color: <strong>Black</strong></li>
+                                      <li>Size: <strong>M</strong></li>
+                                      <li>Qty: <strong>1</strong></li>
+                                    </ul>
+                                  </div>
+                                </div>
+                                <div>
+                                  <button class="btn rounded-1  ">Cancel Order</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tab-pane fade p-2" id="v-pills-my_wallet" role="tabpanel" aria-labelledby="v-pills-my_wallet-tab" 
+                      tabindex="0">
+                      <div class="row row-cols-1">
+                        <div class="col fw-medium">
+                          <h5 class="border-bottom pb-3 mb-3 fw-semibold">My Wallet</h5>
+                          <h5 class="text_gray pt-3">Current Balance:</h5>
+                          <h3 class="fw-bold pt-2">$0.00</h3>
+                          <div class="card mt-4 p-3 border-0 rounded-1 wallet_details_card gap-3">
+                            <div class="d-flex justify-content-between align-items-center">
+                              <span>Total Deposit: </span>
+                              <span>$0.00</span>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center">
+                              <span>Total Spent: </span>
+                              <span>$0.00</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tab-pane fade p-2" id="v-pills-address" role="tabpanel" aria-labelledby="v-pills-address-tab" 
+                      tabindex="0">
+                      <div class="row row-cols-1">
+                        <div class="col fw-medium address_col">
+                          <h5 class="border-bottom pb-3 mb-3 fw-semibold">My Address</h5>
+                          <div class="row row-cols-3 gy-4">
+                            <div class="col">
+                              <div class="card border-1 rounded-2 p-3 shadow-sm h-100 text_gray gap-2">
+                                <div class="fw-semibold text_secondary">Ayush Bansal <span class="text_orange">( Default )</span></div>
+                                <div>Number: 9586543214</div>
+                                <div>Pixel Softwares , Sector - 8 </div>
+                                <div>174102</div>
+                                <div>India</div>
+                                <div class="d-flex gap-2 align-items-center pt-2">
+                                  <button class="btn" type="button">Edit</button>
+                                  <button class="btn secondary_btn" type="button">Delete</button>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col">
+                              <div class="card border-1 rounded-2 p-3 shadow-sm h-100 text_gray gap-2">
+                                <div class="fw-semibold text_secondary">Ayush Bansal</div>
+                                <div>Number: 9586543214</div>
+                                <div>Pixel Softwares , Sector - 8 </div>
+                                <div>174102</div>
+                                <div>India</div>
+                                <div class="d-flex gap-2 align-items-center pt-2">
+                                  <button class="btn" type="button">Edit</button>
+                                  <button class="btn secondary_btn" type="button">Delete</button>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col">
+                              <div class="card border-1 rounded-2 p-3 shadow-sm h-100 text_gray gap-2">
+                                <div class="fw-semibold text_secondary">Ayush Bansal</div>
+                                <div>Number: 9586543214</div>
+                                <div>Pixel Softwares , Sector - 8 </div>
+                                <div>174102</div>
+                                <div>India</div>
+                                <div class="d-flex gap-2 align-items-center pt-2">
+                                  <button class="btn" type="button">Edit</button>
+                                  <button class="btn secondary_btn" type="button">Delete</button>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col">
+                              <a href="#" class="add_address py-5 p-3 card justify-content-center align-items-center h-100">
+                                <img src="images/plus_icon_2.png" alt="img" class="img-fluid" width="80">
+                                Add Address
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tab-pane fade p-2" id="v-pills-reviews" role="tabpanel" aria-labelledby="v-pills-reviews-tab" 
+                      tabindex="0">
+                      <div class="row row-cols-1">
+                        <div class="col d-flex flex-column gap-3">
+                          <h5 class="border-bottom pb-3 mb-4 fw-semibold">My Reviews</h5>
+                          <div class="card border-0 flex-row gap-3 reviews_card">
+                            <a href="#">
+                              <img src="images/product_img.png" alt="img" class="img-fluid" width="150">
+                            </a>
+                            <div class="position-relative w-100 text_gray fw-medium d-flex flex-column gap-2">
+                              <a href="#">
+                                <h5 class="fw-semibold">Basic Colored Sweatpants with elastic Hems</h5>
+                              </a>
+                              <ul class="d-flex gap-2 rating_ul">
+                                <li class="golden_color">
+                                  <i class="fa fa-star" aria-hidden="true"></i>
+                                </li>
+                                <li class="golden_color">
+                                  <i class="fa fa-star" aria-hidden="true"></i>
+                                </li>
+                                <li>
+                                  <i class="fa fa-star" aria-hidden="true"></i>
+                                </li>
+                                <li>
+                                  <i class="fa fa-star" aria-hidden="true"></i>
+                                </li>
+                                <li>
+                                  <i class="fa fa-star" aria-hidden="true"></i>
+                                </li>
+                              </ul>
+                              <div>Reviewed on 27 September 2024</div>
+                              <p>Package contains: 1 jeansMachine wash coldMid RiseCotton BlendProduct Code: 443043160009A 
+                                  perfect blend of versatility and style, jeans let you flaunt a variety of looks.</p>
+                              <ul class="d-flex gap-3 position-absolute">
+                                <li>
+                                  <a href="#">Edit</a>
+                                </li>
+                                <li>
+                                  <a href="#">
+                                    <i class="fa fa-trash" aria-hidden="true"></i>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="#">
+                                    <i class="fa fa-share-alt" aria-hidden="true"></i>
+                                  </a>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="card border-0 flex-row gap-3 reviews_card">
+                            <a href="#">
+                              <img src="images/product_img.png" alt="img" class="img-fluid" width="150">
+                            </a>
+                            <div class="position-relative w-100 text_gray fw-medium d-flex flex-column gap-2">
+                              <a href="#">
+                                <h5 class="fw-semibold">Basic Colored Sweatpants with elastic Hems</h5>
+                              </a>
+                              <ul class="d-flex gap-2 rating_ul">
+                                <li class="golden_color">
+                                  <i class="fa fa-star" aria-hidden="true"></i>
+                                </li>
+                                <li class="golden_color">
+                                  <i class="fa fa-star" aria-hidden="true"></i>
+                                </li>
+                                <li>
+                                  <i class="fa fa-star" aria-hidden="true"></i>
+                                </li>
+                                <li>
+                                  <i class="fa fa-star" aria-hidden="true"></i>
+                                </li>
+                                <li>
+                                  <i class="fa fa-star" aria-hidden="true"></i>
+                                </li>
+                              </ul>
+                              <div>Reviewed on 27 September 2024</div>
+                              <p>Package contains: 1 jeansMachine wash coldMid RiseCotton BlendProduct Code: 443043160009A 
+                                  perfect blend of versatility and style, jeans let you flaunt a variety of looks.</p>
+                              <ul class="d-flex gap-3 position-absolute">
+                                <li>
+                                  <a href="#">Edit</a>
+                                </li>
+                                <li>
+                                  <a href="#">
+                                    <i class="fa fa-trash" aria-hidden="true"></i>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="#">
+                                    <i class="fa fa-share-alt" aria-hidden="true"></i>
+                                  </a>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="card border-0 flex-row gap-3 reviews_card">
+                            <a href="#">
+                              <img src="images/product_img.png" alt="img" class="img-fluid" width="150">
+                            </a>
+                            <div class="position-relative w-100 text_gray fw-medium d-flex flex-column gap-2">
+                              <a href="#">
+                                <h5 class="fw-semibold">Basic Colored Sweatpants with elastic Hems</h5>
+                              </a>
+                              <ul class="d-flex gap-2 rating_ul">
+                                <li class="golden_color">
+                                  <i class="fa fa-star" aria-hidden="true"></i>
+                                </li>
+                                <li class="golden_color">
+                                  <i class="fa fa-star" aria-hidden="true"></i>
+                                </li>
+                                <li>
+                                  <i class="fa fa-star" aria-hidden="true"></i>
+                                </li>
+                                <li>
+                                  <i class="fa fa-star" aria-hidden="true"></i>
+                                </li>
+                                <li>
+                                  <i class="fa fa-star" aria-hidden="true"></i>
+                                </li>
+                              </ul>
+                              <div>Reviewed on 27 September 2024</div>
+                              <p>Package contains: 1 jeansMachine wash coldMid RiseCotton BlendProduct Code: 443043160009A 
+                                  perfect blend of versatility and style, jeans let you flaunt a variety of looks.</p>
+                              <ul class="d-flex gap-3 position-absolute">
+                                <li>
+                                  <a href="#">Edit</a>
+                                </li>
+                                <li>
+                                  <a href="#">
+                                    <i class="fa fa-trash" aria-hidden="true"></i>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="#">
+                                    <i class="fa fa-share-alt" aria-hidden="true"></i>
+                                  </a>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="card border-0 flex-row gap-3 reviews_card">
+                            <a href="#">
+                              <img src="images/product_img.png" alt="img" class="img-fluid" width="150">
+                            </a>
+                            <div class="position-relative w-100 text_gray fw-medium d-flex flex-column gap-2">
+                              <a href="#">
+                                <h5 class="fw-semibold">Basic Colored Sweatpants with elastic Hems</h5>
+                              </a>
+                              <ul class="d-flex gap-2 rating_ul">
+                                <li class="golden_color">
+                                  <i class="fa fa-star" aria-hidden="true"></i>
+                                </li>
+                                <li class="golden_color">
+                                  <i class="fa fa-star" aria-hidden="true"></i>
+                                </li>
+                                <li>
+                                  <i class="fa fa-star" aria-hidden="true"></i>
+                                </li>
+                                <li>
+                                  <i class="fa fa-star" aria-hidden="true"></i>
+                                </li>
+                                <li>
+                                  <i class="fa fa-star" aria-hidden="true"></i>
+                                </li>
+                              </ul>
+                              <div>Reviewed on 27 September 2024</div>
+                              <p>Package contains: 1 jeansMachine wash coldMid RiseCotton BlendProduct Code: 443043160009A 
+                                  perfect blend of versatility and style, jeans let you flaunt a variety of looks.</p>
+                              <ul class="d-flex gap-3 position-absolute">
+                                <li>
+                                  <a href="#">Edit</a>
+                                </li>
+                                <li>
+                                  <a href="#">
+                                    <i class="fa fa-trash" aria-hidden="true"></i>
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="#">
+                                    <i class="fa fa-share-alt" aria-hidden="true"></i>
+                                  </a>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
