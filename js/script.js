@@ -6,7 +6,7 @@ function onscroll_header() {
 		banner.classList.add('scroll_header_padding');
 	} else {
 		header.classList.remove('scroll_header');
-		banner.classList.remove('scroll_header_padding');
+		banner?.classList.remove('scroll_header_padding');
 	}
 }
 var header = document.querySelector('header');
@@ -35,6 +35,28 @@ div.addEventListener('focusout',()=>{
 	suggestion.classList.remove('activated');
 })
 
+// ===============sidebar js ==========================
+
+const main_ul_div = document.querySelector('.main_ul_div');
+const sidebar_toggle_btn = document.querySelectorAll('.sub_category_btn');
+const main_category_toggle_btn = document.querySelectorAll('.main_category_toggle_btn');
+
+sidebar_toggle_btn.forEach((btn)=>{
+	btn.addEventListener('click',()=>{
+		const attr = btn.getAttribute('btn-target');
+		const sub_category = document.querySelector(`[btn-parent="${attr}"]`);
+		main_ul_div.classList.add('hide');
+		sub_category.classList.add('show');
+	})
+})
+
+main_category_toggle_btn.forEach((btn)=>{
+	btn.addEventListener('click',()=>{
+		const parent = btn.parentElement.parentElement.parentElement;
+		parent.classList.remove('show');
+		main_ul_div.classList.remove('hide');
+	})
+})
 
 // ============ product add to cart btn js ========================
 
