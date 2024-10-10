@@ -147,12 +147,12 @@ function clear_all_visibility() {
   if (selected_arr.length > 0) {
     clear_all_filter.classList.add('d-block');
     clear_all_filter.classList.remove('d-none');
-    filter_container.classList.add('mt-3');
+    // filter_container.classList.add('mt-3');
   }
   else {
     clear_all_filter?.classList.remove('d-block');
     clear_all_filter?.classList.add('d-none');
-    filter_container?.classList.remove('mt-3');
+    // filter_container?.classList.remove('mt-3');
 
   }
 }
