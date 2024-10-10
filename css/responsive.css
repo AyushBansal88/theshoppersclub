@@ -58,6 +58,12 @@
   }
 }
 
+@media(max-width:991px) and (min-width:800px){
+  .category_card .product_row .col{
+    width: 25% !important;
+  }
+}
+
 @media(max-width:991px) {
   .deals_cards_section .card {
     height: 380px;
